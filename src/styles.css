@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --fevColor: #FFCA00;
+  --bgColor: #111111;
+  --subTextColor: #999999;
+}
+
+*{
+  padding: 0px ;
+  margin: 0px;
+
+  font-family:Bahnschrift ,system-ui, -apple-system, 'Open Sans';
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bgColor);
+}
+
+.title{
+  font-size: 50px;
+
+}
+
+.subtitle{
+  font-size: 24px;
+  color: var(--subTextColor);
+}
+
+.fevCol{
+  color: var(--fevColor);
+}
+
+.m1{
+  margin: 24px;
+}
+
+.m2{
+  margin: 48px;
+}
+
+.p1{
+  padding: 24px;
+}
+
+.p2{
+  padding: 24px;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--subTextColor);
+
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+
+  &:hover{
+    color: #FFCA00;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+}
