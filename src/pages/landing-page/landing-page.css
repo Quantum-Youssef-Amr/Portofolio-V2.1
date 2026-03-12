@@ -1,0 +1,29 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-cards{
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+
+  background: rgba(18,18,18,0.65);
+
+  backdrop-filter: blur(3px);
+
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+
+  transform: translate(0%,-90%);
+  -webkit-transform: translate(0%,-90%);
+  -moz-transform: translate(0%,-90%);
+  -ms-transform: translate(0%,-90%);
+  -o-transform: translate(0%,-90%);
+}
