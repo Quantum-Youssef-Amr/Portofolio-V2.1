@@ -2,9 +2,14 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  margin: 0px 1em 0px 1em;
 }
 
 .highlight-cards{
+  position: absolute;
+  top: 77vh;
+
   display: flex;
   gap: 4em;
   justify-content: center;
@@ -20,10 +25,54 @@ main{
   -moz-border-radius: 2em;
   -ms-border-radius: 2em;
   -o-border-radius: 2em;
+}
 
-  transform: translate(0%,-90%);
-  -webkit-transform: translate(0%,-90%);
-  -moz-transform: translate(0%,-90%);
-  -ms-transform: translate(0%,-90%);
-  -o-transform: translate(0%,-90%);
+.gradient{
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(17,17,17,0) 77.22%, #121212 96%);
+  z-index: 1;
+}
+
+.seeMore{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  pointer-events: none;
+
+  a{
+    text-decoration: none;
+    display: flex;
+    gap: 1em;
+    color: var(--subTextColor);
+
+    justify-content: flex-end;
+    align-items: center;
+
+    pointer-events: all;
+
+    svg{
+      fill: var(--subTextColor);
+      width: 2em;
+      height: 2em;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+    }
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+
+    &:hover{
+    color: #FFCA00 !important;
+    svg{
+      fill: #FFCA00  !important;
+    }
+  }
+}
+  z-index: 1;
 }

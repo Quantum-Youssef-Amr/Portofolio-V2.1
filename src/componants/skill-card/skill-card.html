@@ -1,0 +1,12 @@
+<div class="appCard p1">
+  <div class="lang m1">
+    @if(Image !== ""){
+      <img [src]="Image">
+    }
+    <h3 class="subtitle">{{Title}}</h3>
+  </div>
+  <div class="progressbar">
+    <div class="fill" [style.--progress]="progress / 10"></div>
+  </div>
+  <div><h3 class="subtitle fevCol">{{progress}} / 10</h3></div>
+</div>
