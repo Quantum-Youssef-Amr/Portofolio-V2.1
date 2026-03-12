@@ -9,6 +9,7 @@
   margin: 0px;
 
   font-family:Bahnschrift ,system-ui, -apple-system, 'Open Sans';
+  color: #fff;
 }
 
 body{
@@ -16,15 +17,15 @@ body{
   flex-direction: column;
 
   background-color: var(--bgColor);
+  font-size: 12px;
 }
 
 .title{
-  font-size: 50px;
-
+  font-size: 2em;
 }
 
 .subtitle{
-  font-size: 24px;
+  font-size: 1em;
   color: var(--subTextColor);
 }
 
@@ -33,19 +34,19 @@ body{
 }
 
 .m1{
-  margin: 24px;
+  margin: 1em;
 }
 
 .m2{
-  margin: 48px;
+  margin: 2em;
 }
 
 .p1{
-  padding: 24px;
+  padding: 1em;
 }
 
 .p2{
-  padding: 24px;
+  padding: 1em;
 }
 
 .link{
@@ -65,5 +66,5 @@ body{
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
-}
+  }
 }

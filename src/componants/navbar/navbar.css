@@ -1,0 +1,50 @@
+.nav{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  background: rgba(18,18,18,0.65);
+
+  height: 2em;
+  width: calc(100% - (1em * 4));
+
+  backdrop-filter: blur(3px);
+
+  border-radius: 50em;
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  -ms-border-radius: 50em;
+  -o-border-radius: 50em;
+}
+
+.navtitle
+{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.8em;
+
+  svg{
+    width: 1.5em;
+    margin-right: 0.5em;
+  }
+}
+
+.links{
+  ul{
+    display: flex;
+    gap: 3.5em;
+    list-style: none;
+
+    li{
+      &:last-child{
+        margin-right: 3.5em;
+      }
+    }
+  }
+}
