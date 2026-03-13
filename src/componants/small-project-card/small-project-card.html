@@ -1,0 +1,17 @@
+<div class="appCard p1" [class.centered]="ProjectDescription.length === 0 && ProjectLogos.length === 0">
+  <span class="titleHolder">
+    <span class="langsHolder">
+      @if(ProjectLogos.length > 0){
+        @for (image of ProjectLogos; track $index) {
+          <img [src]="image">
+        }
+      }
+    </span>
+    <a class="title link" [href]="ProjectLink">
+      {{ProjectName}}
+    </a>
+  </span>
+  @if(ProjectDescription.length > 0){
+    <h5 class="subtitle">{{ProjectDescription}}</h5>
+  }
+</div>

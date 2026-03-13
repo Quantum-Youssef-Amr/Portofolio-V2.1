@@ -1,0 +1,44 @@
+.appCard{
+  width: minmax(30em, 30%);
+  height: 5em;
+
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  text-align: left;
+}
+
+.langsHolder{
+  display: flex;
+  gap: 0.5em;
+
+  justify-content: center;
+  align-items: center;
+
+  img{
+    width: 1.5em;
+    height: 1.5em;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+}
+
+.titleHolder{
+  display: flex;
+  gap: 1em;
+
+  justify-content: left;
+  align-items: center;
+}
+
+
+.title{
+ font-size: 1.5em;
+ cursor: pointer;
+
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
+}

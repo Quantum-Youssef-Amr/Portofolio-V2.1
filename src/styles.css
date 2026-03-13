@@ -37,6 +37,14 @@ body{
   margin: 1em;
 }
 
+.mt1{
+  margin-top: 1em;
+}
+
+.mb1{
+  margin-bottom: 1em;
+}
+
 .m2{
   margin: 2em;
 }
@@ -47,6 +55,14 @@ body{
 
 .p2{
   padding: 1em;
+}
+
+.wid90{
+  max-width: 90%;
+}
+
+.wid80{
+  max-width: 80%;
 }
 
 .link{
@@ -61,11 +77,6 @@ body{
 
   &:hover{
     color: #FFCA00;
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
   }
 }
 
