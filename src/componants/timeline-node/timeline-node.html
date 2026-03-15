@@ -1,0 +1,16 @@
+<main class="flex gap-2" (mouseenter)="MouseOver = true;" (mouseleave)="MouseOver = false;">
+  <div class="node flex flex-column" >
+      <app-tooltip [class.show]="MouseOver" class="tooltip node" [NodeTooltipMassage]="Year"></app-tooltip>
+      <svg [class.node-hovered]="MouseOver" viewBox="0 0 48 48" fill="#666666" xmlns="http://www.w3.org/2000/svg" >
+      <path d="M0 24C0 10.7452 10.7451 0 24 0C37.2549 0 48 10.7452 48 24C48 37.2548 37.2549 48 24 48C10.7451 48 0 37.2548 0 24Z" fill-rule="evenodd" />
+    </svg>
+  </div>
+  @if(!End){
+    <div class="line flex flex-column" [style.--numberOfNodes]="NumberOfLines">
+        <svg [class.line-hovered]="MouseOver" viewBox="0 0 240 12" fill="#666666"  xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 0L234 0C237.314 0 240 2.68584 240 6L240 6C240 9.31416 237.314 12 234 12L6 12C2.68585 12 0 9.31416 0 6L0 6C0 2.68584 2.68585 0 6 0L6 0Z"/>
+        </svg>
+        <app-bigtooltip [class.show]="MouseOver" class="tooltip line" [NodeTooltipMassage]="Massage"></app-bigtooltip>
+    </div>
+  }
+</main>

@@ -1,0 +1,26 @@
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.appCard{
+  height: 5em;
+  width: 30em;
+  border-radius: calc(5em / 2);
+  -webkit-border-radius: calc(5em / 2);
+  -moz-border-radius: calc(5em / 2);
+  -ms-border-radius: calc(5em / 2);
+  -o-border-radius: calc(5em / 2);
+}
+
+img{
+  width: 5em;
+  height:5em;
+
+  top: 0px;
+  left: 0px;
+}
+

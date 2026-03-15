@@ -1,0 +1,45 @@
+.hero{
+  height: 40em;
+}
+
+.gradient{
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(17,17,17,0) 50%, var(--bgColor) 95%);
+  z-index: 0;
+}
+
+.imgs{
+  justify-content: space-between;
+  align-items: center;
+
+  *{
+    width: 100%;
+  }
+}
+
+.img-right-side{
+  background-image: url('/assets/imgs/about_page_banner_right.png');
+  background-position: right;
+}
+
+.img-left-side{
+  background-image: url('/assets/imgs/about_page_banner_left.png');
+  background-position: left;
+}
+
+.img-left-side, .img-right-side{
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+@media (max-width:700px) {
+  .img-left-side, .img-right-side{
+    background-size: cover;
+  }
+}
+
+app-contacts-card{
+  z-index: 1;
+}

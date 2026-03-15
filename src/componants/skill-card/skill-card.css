@@ -1,6 +1,6 @@
 .appCard{
   display: flex;
-
+  text-align: center;
   width: 9em;
   height: 9em;
 
@@ -13,7 +13,7 @@
     height: 4em;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
-}
+  }
 }
 
 .progressbar{

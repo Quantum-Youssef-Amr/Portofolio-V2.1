@@ -12,6 +12,7 @@
   width: calc(100% - (1em * 4));
 
   backdrop-filter: blur(3px);
+  border: 1px solid var(--fevColor);
 
   border-radius: 50em;
   -webkit-border-radius: 50em;

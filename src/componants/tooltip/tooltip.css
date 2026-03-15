@@ -1,0 +1,12 @@
+.stack-container{
+  width: 8em;
+  height: 6em;
+}
+
+svg{
+  width: 100%;
+}
+
+.year{
+  padding-top: 0.48em;
+}

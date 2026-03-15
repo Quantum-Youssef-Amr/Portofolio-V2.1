@@ -1,0 +1,81 @@
+.flex{
+  position: relative;
+}
+
+.gap-2{
+  gap: 2em;
+}
+
+.node{
+  svg{
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.line{
+  svg{
+    width: calc(( 80vw / var(--numberOfNodes)) - 4em);
+    height: 1em;
+  }
+}
+
+.node, .line{
+  svg{
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+  }
+}
+
+.indicate{
+   transition: all 0.2s ease-out;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -ms-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   fill: #fff;
+}
+
+.node-hovered{
+  fill: #FFCA00 !important;
+}
+
+.line-hovered{
+  fill: #FFCA55 !important;
+}
+
+.tooltip{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+
+
+.show{
+  visibility: visible;
+  opacity: 1;
+}
+
+.show.line{
+  top: 600%;
+}
+
+.show.node{
+  top: -100%;
+}

@@ -29,7 +29,7 @@ main{
 
 .gradient{
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(17,17,17,0) 77.22%, #121212 96%);
+  background: linear-gradient(90deg, rgba(17,17,17,0) 50%, var(--bgColor) 95%);
   z-index: 1;
 }
 
@@ -78,9 +78,3 @@ main{
 }
 
 
-.Grid-Collection{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  gap: 4em;
-}

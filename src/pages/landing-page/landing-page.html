@@ -1,5 +1,4 @@
 <main>
-  <app-navbar></app-navbar>
   <app-landing-hero></app-landing-hero>
   <div class="highlight-cards">
     <app-text-card [Title]="`+10K`" [SubTitle]="`Line of Codes`"></app-text-card>
@@ -27,7 +26,7 @@
     </div>
     <div class="gradient"></div>
     <div class="seeMore">
-      <a href="/projects" class="p1">
+      <a href="/skills" class="p1">
         See more
         <svg viewBox="0 0 35.356 35.356" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
           <g transform="matrix(0.707 -0.707 0.707 0.707 -0 17.678)">
@@ -53,25 +52,40 @@
   </div>
 
   <!-- Games -->
-  <div class="wid90 m2 horizontal-collection">
+
+  <div class="wid90 m2">
     <app-paragraph [Title]="'Games'"></app-paragraph>
-    <div class="horizontal-slider">
-        <app-big-project-card></app-big-project-card>
-        <app-big-project-card></app-big-project-card>
-        <app-big-project-card></app-big-project-card>
-    </div>
-    <div class="gradient"></div>
-    <div class="seeMore">
-      <a href="/projects" class="p1">
-        See more
-        <svg viewBox="0 0 35.356 35.356" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-          <g transform="matrix(0.707 -0.707 0.707 0.707 -0 17.678)">
-          <rect width="25" height="5"  fill-rule="evenodd" transform="matrix(1 0 0 1 0 20)" />
-          <path d="M0 0L25 -3.8147e-06L25 5L0 5.00001L0 0Z"  fill-rule="evenodd" transform="matrix(-0 -1 1 -0 20 25)" />
-          </g>
-        </svg>
-      </a>
+    <div class="horizontal-collection">
+      <div class="horizontal-slider">
+          <app-big-project-card [ProjectImage]="`assets/Projects/Infected/Infected.png`" [ProjectName]="`Infected`" [ProjectDescription]="` is a 2D tower defense game set in a collapsing computer system overrun by viruses. Strategize, adapt, and survive as enemies evolve with every choice you make. Balance combat, resource management, and survival in a world on the brink of collapse.`"></app-big-project-card>
+          <app-big-project-card [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
+          <app-big-project-card [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
+          <app-big-project-card [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
+          <app-big-project-card [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
+      </div>
+      <div class="gradient"></div>
+      <div class="seeMore">
+        <a href="/games" class="p1">
+          See more
+          <svg viewBox="0 0 35.356 35.356" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
+            <g transform="matrix(0.707 -0.707 0.707 0.707 -0 17.678)">
+            <rect width="25" height="5"  fill-rule="evenodd" transform="matrix(1 0 0 1 0 20)" />
+            <path d="M0 0L25 -3.8147e-06L25 5L0 5.00001L0 0Z"  fill-rule="evenodd" transform="matrix(-0 -1 1 -0 20 25)" />
+            </g>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
 
+  <!-- contact me -->
+   <div class="wid90">
+     <app-paragraph class="wid90" [Title]="`Contact me`" [paragraph]="['I’m always open to new opportunities collaborations, or even a good chat about technology, game development, and data science. Whether you’ve got a wild idea, a challenging project, or just want to talk about how to make things smarter (or more fun) — I’d love to hear  from you.']"></app-paragraph>
+    <div class="Grid-Collection">
+      <app-btn-with-image [Title]="`GitHub`" [Image]="`assets/Social/GitHub.svg`" [link]="`https://github.com/Quantum-Youssef-Amr`"></app-btn-with-image>
+      <app-btn-with-image [Title]="`LinkedIn`" [Image]="`assets/Social/LinkedIn.svg`" [link]="`https://www.linkedin.com/in/youssef-amr-2ba9962b5`"></app-btn-with-image>
+      <app-btn-with-image [Title]="`Mail me`" [Image]="`assets/Social/Mail.svg`" [link]="`mailto:amry14003@gmail.com`"></app-btn-with-image>
+    </div>
+    <app-paragraph class="fevCol centered" [paragraph]="[`Every great project starts with a single conversation — so don’t hesitate to start one.`]"></app-paragraph>
+   </div>
 </main>

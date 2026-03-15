@@ -1,0 +1,18 @@
+.appCard{
+  justify-content: flex-start;
+}
+
+.project-card{
+  width: 20em;
+  height: 28em;
+
+  overflow: hidden;
+}
+
+.project-image{
+  width: 100%;
+}
+
+.text-holder{
+  overflow: hidden scroll;
+}
