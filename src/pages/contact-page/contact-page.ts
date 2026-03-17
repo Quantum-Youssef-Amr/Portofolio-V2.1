@@ -13,14 +13,14 @@ export class ContactPage implements AfterViewInit, OnDestroy {
   @ViewChild('canvas') canvasRef!: ElementRef<HTMLCanvasElement>;
   @ViewChild('PopUp') popUp!: ElementRef<HTMLElement>;
 
-  private popTimeID: number = -1;
+  private achievementMade: boolean = false;
   private ctx!: CanvasRenderingContext2D;
   private animationFrame: number = 0;
   private mouse: Vector = { x: 0, y: 0 };
   private points: Point[] = [];
   private PARTICLE_COUNT: number = 0;
-  private readonly FractionCo = 0.89;
-  private readonly G = 0.3;
+  private readonly FractionCo = 0.98;
+  private readonly G = 0.15;
   private readonly PRIMARY_COLOR = '#111111';
   private readonly ACCENT_COLOR = '#ffca00';
 
@@ -67,7 +67,7 @@ export class ContactPage implements AfterViewInit, OnDestroy {
       this.points.push({
         position : {x :Math.random() * canvas.width, y: Math.random() * canvas.height},
         v: {x: (Math.random() - 0.5), y: (Math.random() - 0.5)},
-        r: Math.random() * 10 + 1.5
+        r: Math.random() * 2 + 2
       });
     }
 
@@ -142,12 +142,12 @@ export class ContactPage implements AfterViewInit, OnDestroy {
       return acc;
     }, 0);
 
-    if(distanceBetweenAllPoints < this.points.length * 10 && this.popTimeID === -1){
+    if(distanceBetweenAllPoints < this.points.length * 20 && this.achievementMade === false){
       this.popUp.nativeElement.classList.add('show');
-      this.popTimeID = setTimeout(() => {
+      setTimeout(() => {
+        this.achievementMade = true;
         this.popUp.nativeElement.classList.remove('show');
-        this.popTimeID = -1
-      }, 2000);
+      }, 5000);
     }
   }
 
@@ -162,12 +162,6 @@ export class ContactPage implements AfterViewInit, OnDestroy {
     ctx.fillRect(0, 0, w, h);
 
     for (let p of this.points) {
-      ctx.beginPath();
-      ctx.arc(p.position.x - 1, p.position.y - 1, p.r * 1.2, 0, Math.PI * 2);
-      ctx.fillStyle = '#ff5500ab';
-      ctx.fill();
-
-
       ctx.beginPath();
       ctx.arc(p.position.x - 1, p.position.y - 1, p.r, 0, Math.PI * 2);
       ctx.fillStyle = this.ACCENT_COLOR;

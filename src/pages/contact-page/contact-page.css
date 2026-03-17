@@ -37,6 +37,7 @@ width: 100dvw;
   padding: 2em;
   margin: 1em;
 
+  overflow: hidden;
   border: 2px solid var(--fevColor);
 
   transition: all 1s ease-out;
@@ -44,8 +45,18 @@ width: 100dvw;
   -moz-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
+
+  img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: calc(100% + 0.25em);
+  }
 }
 
+.text{
+  margin-left: 7em;
+}
 
 .show{
   left: 0em !important;

@@ -214,7 +214,6 @@ body{
 
 .appCard{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(54,54,54,0.25);
