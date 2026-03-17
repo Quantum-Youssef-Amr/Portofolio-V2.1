@@ -1,5 +1,5 @@
 <main class="flex">
   @for (timeNode of Timeline; track $index) {
-    <app-timeline-node (Indicate)="indicateIndex === $index ? 1 : 0" [NumberOfLines]="Timeline.length"  [Year]="timeNode.year" [Massage]="timeNode.massage" [End]="$index === (Timeline.length - 1)"></app-timeline-node>
+    <app-timeline-node (Indicate)="indicateIndex === $index ? 1 : 0" [NumberOfLines]="Timeline.length"  [Year]="timeNode.title" [Massage]="timeNode.massage" [End]="$index === (Timeline.length - 1)"></app-timeline-node>
   }
 </main>

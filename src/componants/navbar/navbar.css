@@ -1,7 +1,7 @@
 .nav{
   display: flex;
   position: fixed;
-  top: -10em;
+  top: 0em;
   left: 0em;
   justify-content: space-between;
   align-items: center;
@@ -9,16 +9,17 @@
   background: rgba(18,18,18,0.65);
 
   height: 2em;
-  width: calc(100% - (1em * 4));
+  width: calc(100% - 1em);
+
+  border: 0px solid transparent;
+
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
 
   backdrop-filter: blur(3px);
-  border: 1px solid var(--fevColor);
-
-  border-radius: 50em;
-  -webkit-border-radius: 50em;
-  -moz-border-radius: 50em;
-  -ms-border-radius: 50em;
-  -o-border-radius: 50em;
 
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
@@ -30,8 +31,17 @@
 }
 
 .scrolled{
-  top: 0em !important;
+  width: calc(100% - (1em * 4));
+  margin: 1em;
+  border: 1px solid var(--fevColor);
+  border-radius: 50em;
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  -ms-border-radius: 50em;
+  -o-border-radius: 50em;
 }
+
+
 
 .navtitle
 {

@@ -10,6 +10,7 @@
 
   font-family:Bahnschrift ,system-ui, -apple-system, 'Open Sans';
   color: #fff;
+  user-select: none;
 }
 
 body{
@@ -49,6 +50,16 @@ body{
 
 .mt1{
   margin-top: 1em;
+}
+
+
+.mt2{
+  margin-top: 2em;
+}
+
+
+.mt3{
+  margin-top: 3em;
 }
 
 .mb1{
@@ -98,18 +109,41 @@ body{
   width: 100%;
 }
 
+.vw100{
+  width: 100vw;
+}
+
+.vh{
+  width: 100vw;
+}
+
 .centered{
   text-align: center;
 }
 
 .flex{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .flex-column{
   flex-direction: column;
+}
+
+.flex-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.gap1{
+  gap: 1em;
+}
+
+.gap2{
+  gap: 2em
 }
 
 .btnlink{

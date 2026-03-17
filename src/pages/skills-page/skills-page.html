@@ -1,9 +1,11 @@
-<main class="p2">
-<app-paragraph [Title]="`My Skills`" [paragraph]="['All scores in this page is personal evaluation']"></app-paragraph>
-
-<app-paragraph class="mb1" [Title]="`Programming languages`"></app-paragraph>
-<div class="horizontal-slide">
-  <app-skill-card [Image]="``" [Title]="``" [progress]="0"></app-skill-card>
-</div>
-
+<main class="p2 mt3">
+<app-paragraph  [Title]="`My Skills`" [paragraph]="['All scores in this page is personal evaluation']"></app-paragraph>
+@for (skillsSection of skills; track $index) {
+  <app-paragraph class="mb1" [Title]="skillsSection.title"></app-paragraph>
+  <div class="flex flex-wrap gap1">
+    @for (skill of skillsSection.skills; track $index) {
+      <app-skill-card [gray]="false" [Image]="skill.skillImage" [Title]="skill.skillTitle" [progress]="skill.skillRate"></app-skill-card>
+    }
+  </div>
+}
 </main>

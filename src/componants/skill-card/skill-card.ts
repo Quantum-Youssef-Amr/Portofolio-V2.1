@@ -10,4 +10,5 @@ export class SkillCard {
 @Input() progress: number = 0;
 @Input() Title: string = "";
 @Input() Image: string = "";
+@Input() gray: boolean = true;
 }

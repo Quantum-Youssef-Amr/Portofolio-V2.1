@@ -1,0 +1,215 @@
+import { Component, ElementRef, ViewChild, AfterViewInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+
+@Component({
+  selector: 'app-contact-page',
+  templateUrl: './contact-page.component.html',
+  styleUrls: ['./contact-page.component.css']
+})
+export class ContactPage implements AfterViewInit, OnDestroy {
+  @ViewChild('canvas') canvasRef!: ElementRef<HTMLCanvasElement>;
+
+  private ctx!: CanvasRenderingContext2D;
+  private animationFrame: number = 0;
+  private mouse = { x: 0, y: 0 };
+  private points: Point[] = [];
+  private readonly PARTICLE_COUNT = 70;
+  private readonly MAX_DIST = 200;
+  private readonly PRIMARY_COLOR = '#111111';
+  private readonly ACCENT_COLOR = '#ffca00';
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.initCanvas();
+      window.addEventListener('resize', this.handleResize.bind(this));
+      
+      const container = this.canvasRef.nativeElement.parentElement;
+      if (container) {
+        container.addEventListener('mousemove', this.handleMouseMove.bind(this));
+        container.addEventListener('mouseleave', this.handleMouseLeave.bind(this));
+      }
+      
+      this.animate();
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      window.removeEventListener('resize', this.handleResize.bind(this));
+      cancelAnimationFrame(this.animationFrame);
+    }
+  }
+
+  private initCanvas(): void {
+    const canvas = this.canvasRef.nativeElement;
+    const parent = canvas.parentElement;
+    if (!parent) return;
+
+    canvas.width = parent.clientWidth;
+    canvas.height = parent.clientHeight;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    this.ctx = ctx;
+
+    this.points = [];
+    for (let i = 0; i < this.PARTICLE_COUNT; i++) {
+      this.points.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.2,
+        vy: (Math.random() - 0.5) * 0.2,
+        size: Math.random() * 3 + 1.5,
+        opacity: Math.random() * 0.7 + 0.3
+      });
+    }
+
+    this.mouse.x = -1000;
+    this.mouse.y = -1000;
+  }
+
+  private handleResize(): void {
+    this.initCanvas();
+  }
+
+  private handleMouseMove(e: MouseEvent): void {
+    const rect = this.canvasRef.nativeElement.getBoundingClientRect();
+    this.mouse.x = e.clientX - rect.left;
+    this.mouse.y = e.clientY - rect.top;
+  }
+
+  private handleMouseLeave(): void {
+    this.mouse.x = -10000;
+    this.mouse.y = -10000;
+  }
+
+  private animate(): void {
+    if (!this.ctx) return;
+    this.updateParticles();
+    this.drawPattern();
+    this.animationFrame = requestAnimationFrame(this.animate.bind(this));
+  }
+
+  private updateParticles(): void {
+    const canvas = this.canvasRef.nativeElement;
+    const w = canvas.width;
+    const h = canvas.height;
+
+    for (let p of this.points) {
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0) p.x = w;
+      if (p.x > w) p.x = 0;
+      if (p.y < 0) p.y = h;
+      if (p.y > h) p.y = 0;
+
+      const dx = p.x - this.mouse.x;
+      const dy = p.y - this.mouse.y;
+      const dist = Math.hypot(dx, dy);
+      
+      if (dist < 120) {
+        const force = (1 - dist / 120) * 0.15;
+        const angle = Math.atan2(dy, dx);
+        p.x += Math.cos(angle) * force;
+        p.y += Math.sin(angle) * force;
+      }
+    }
+  }
+
+  private drawPattern(): void {
+    if (!this.ctx) return;
+    const canvas = this.canvasRef.nativeElement;
+    const ctx = this.ctx;
+    const w = canvas.width;
+    const h = canvas.height;
+
+    ctx.fillStyle = this.PRIMARY_COLOR;
+    ctx.fillRect(0, 0, w, h);
+
+    for (let i = 0; i < this.points.length; i++) {
+      for (let j = i + 1; j < this.points.length; j++) {
+        const p1 = this.points[i];
+        const p2 = this.points[j];
+        const dx = p1.x - p2.x;
+        const dy = p1.y - p2.y;
+        const dist = Math.hypot(dx, dy);
+
+        if (dist < this.MAX_DIST) {
+          const intensity = (1 - dist / this.MAX_DIST) * 0.2;
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(255, 202, 0, ${intensity})`;
+          ctx.lineWidth = 1.2;
+          ctx.moveTo(p1.x, p1.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    for (let p of this.points) {
+      const dx = p.x - this.mouse.x;
+      const dy = p.y - this.mouse.y;
+      const distToMouse = Math.hypot(dx, dy);
+      const mouseGlow = Math.max(0, 1 - distToMouse / 150);
+
+      ctx.beginPath();
+      const gradient = ctx.createRadialGradient(p.x, p.y, 1, p.x, p.y, p.size * 4);
+      gradient.addColorStop(0, `rgba(255, 202, 0, ${0.9 + mouseGlow * 0.3})`);
+      gradient.addColorStop(0.5, `rgba(255, 202, 0, ${0.4})`);
+      gradient.addColorStop(1, `rgba(255, 202, 0, 0)`);
+      
+      ctx.arc(p.x, p.y, p.size * 3, 0, Math.PI * 2);
+      ctx.fillStyle = gradient;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size * (0.8 + mouseGlow * 0.5), 0, Math.PI * 2);
+      ctx.fillStyle = this.ACCENT_COLOR;
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(p.x - 1, p.y - 1, p.size * 0.3, 0, Math.PI * 2);
+      ctx.fillStyle = '#ffffff';
+      ctx.fill();
+    }
+
+    if (this.mouse.x > 0 && this.mouse.x < w && this.mouse.y > 0 && this.mouse.y < h) {
+      const mouseGradient = ctx.createRadialGradient(
+        this.mouse.x, this.mouse.y, 5,
+        this.mouse.x, this.mouse.y, 180
+      );
+      mouseGradient.addColorStop(0, 'rgba(255, 202, 0, 0.1)');
+      mouseGradient.addColorStop(0.5, 'rgba(255, 202, 0, 0.03)');
+      mouseGradient.addColorStop(1, 'rgba(17, 17, 17, 0)');
+      
+      ctx.fillStyle = mouseGradient;
+      ctx.fillRect(0, 0, w, h);
+
+      for (let p of this.points) {
+        const dx = p.x - this.mouse.x;
+        const dy = p.y - this.mouse.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < 150) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(255, 202, 0, ${(1 - dist / 150) * 0.2})`;
+          ctx.lineWidth = 1;
+          ctx.moveTo(this.mouse.x, this.mouse.y);
+          ctx.lineTo(p.x, p.y);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+}
+
+interface Point {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  size: number;
+  opacity: number;
+}

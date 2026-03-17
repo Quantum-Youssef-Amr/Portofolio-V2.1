@@ -1,11 +1,11 @@
 <div class="project-card appCard">
-  @if(ProjectImage !== ""){
-    <img class="project-image" [src]="ProjectImage">
-  }
-  <div class="p1">
-    <a class="link" [href]="`/games/${ProjectName}`">
-      <h3 class="title mb05 link">{{ProjectName}}</h3>
-    </a>
-    <h5 class="text-holder subtitle">{{ProjectDescription}}</h5>
-  </div>
+    @if(ProjectImage !== ""){
+      <img class="project-image" [src]="ProjectImage">
+    }
+    <div class="p1">
+      <a class="link" [href]="ProjectLink">
+        <h3 class="title mb05 link">{{ProjectName}}</h3>
+      </a>
+      <h5 class="text-holder subtitle">{{ProjectDescription}}</h5>
+    </div>
 </div>

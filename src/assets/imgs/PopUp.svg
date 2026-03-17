@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Krita: https://krita.org -->
+
+<svg
+   width="30.719999pt"
+   height="30.719999pt"
+   viewBox="0 0 30.72 30.72"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <ellipse
+     id="shape0"
+     rx="9.5775003"
+     ry="9.6547384"
+     cx="3.3374999"
+     cy="26.510262"
+     fill="#000000"
+     fill-rule="evenodd"
+     stroke="none"
+     stroke-width="9.6"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     style="fill:#ffffff;fill-opacity:1" />
+  <ellipse
+     id="shape1"
+     rx="17.639999"
+     ry="17.76"
+     cx="4.3799992"
+     cy="26.1"
+     fill="none"
+     stroke="#000000"
+     stroke-width="1.2"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     style="stroke:#ffffff;stroke-opacity:1" />
+  <ellipse
+     id="shape01"
+     rx="27.305323"
+     ry="27.491074"
+     cx="4.2546768"
+     cy="25.938679"
+     fill="none"
+     stroke="#000000"
+     stroke-width="1.2"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     style="stroke:#ffffff;stroke-opacity:1" />
+  <circle
+     id="shape2"
+     cx="7.0799999"
+     cy="8.5199995"
+     fill="#000000"
+     fill-rule="evenodd"
+     stroke="none"
+     stroke-width="1.2"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     style="fill:#ffffff;fill-opacity:1"
+     r="2.28" />
+  <circle
+     id="shape02"
+     r="1.7653526"
+     cx="26.356056"
+     cy="9.6253529"
+     fill="#000000"
+     stroke="none"
+     stroke-width="1.2"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>

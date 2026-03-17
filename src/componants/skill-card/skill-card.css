@@ -1,8 +1,8 @@
 .appCard{
   display: flex;
   text-align: center;
-  width: 9em;
-  height: 9em;
+  width: 10em;
+  height: fit-content;
 
   *{
     flex-shrink: 0;
@@ -11,9 +11,12 @@
   img{
     width: 4em;
     height: 4em;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
   }
+}
+
+.gray{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 .progressbar{
@@ -27,7 +30,7 @@
   width: calc(100% - 1em);
   height: 1em;
 
-  padding: 0.15em;
+  padding: 0.3em;
   margin: 0.5em;
   background-color: #111;
 

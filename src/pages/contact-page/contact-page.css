@@ -1,0 +1,52 @@
+.contactsPage{
+width: 100dvw;
+  height: calc(100dvh - 6em);
+
+}
+
+.gradient{
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, var(--bgColor) 90%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background-canvas{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+.stack-container{
+  position: relative;
+  width: 100dvw;
+  height: calc(100dvh - 6em);
+}
+
+.pop{
+  position: absolute;
+  top: 4em;
+  left: -100em;
+  width: fit-content;
+  height: fit-content;
+  padding: 2em;
+  margin: 1em;
+
+  border: 2px solid var(--fevColor);
+
+  transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+}
+
+
+.show{
+  left: 0em !important;
+}

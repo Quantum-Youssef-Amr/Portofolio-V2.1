@@ -1,4 +1,4 @@
-<main class="flex gap-2" (mouseenter)="MouseOver = true;" (mouseleave)="MouseOver = false;">
+<main class="flex gap-2 flex-center" (mouseenter)="MouseOver = true;" (mouseleave)="MouseOver = false;">
   <div class="node flex flex-column" >
       <app-tooltip [class.show]="MouseOver" class="tooltip node" [NodeTooltipMassage]="Year"></app-tooltip>
       <svg [class.node-hovered]="MouseOver" viewBox="0 0 48 48" fill="#666666" xmlns="http://www.w3.org/2000/svg" >

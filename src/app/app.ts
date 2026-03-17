@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { AfterContentInit, Component, Inject, OnInit, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Footer } from "../componants/footer/footer";
 import { Navbar } from "../componants/navbar/navbar";
@@ -9,10 +9,6 @@ import { Navbar } from "../componants/navbar/navbar";
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App implements OnInit{
+export class App{
   protected readonly title = signal('Youssef Amr');
-
-  ngOnInit(): void {
-
-  }
 }

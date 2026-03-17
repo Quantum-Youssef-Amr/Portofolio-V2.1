@@ -1,5 +1,6 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, QueryList, ViewChildren} from '@angular/core';
+import { AfterViewInit, Component, Input, QueryList, ViewChildren} from '@angular/core';
 import { TimelineNode } from "../timeline-node/timeline-node";
+import { timelineNode} from '../../app-types.model';
 
 @Component({
   selector: 'app-timeline',
@@ -8,7 +9,7 @@ import { TimelineNode } from "../timeline-node/timeline-node";
   styleUrl: './timeline.css',
 })
 export class Timeline implements AfterViewInit{
-  @Input() Timeline: Array<TimelineNodeDT> = []
+  @Input() Timeline: Array<timelineNode> = []
   @ViewChildren(TimelineNode) nodes!: QueryList<TimelineNode>;
   indicateIndex: number = -1;
 
@@ -25,9 +26,4 @@ export class Timeline implements AfterViewInit{
 
     }, 1000);
   }
-}
-
-export type TimelineNodeDT = {
-  year: string,
-  massage: string
 }

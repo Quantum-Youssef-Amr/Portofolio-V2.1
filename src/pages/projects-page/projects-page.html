@@ -1,0 +1,19 @@
+<main class="flex flex-column gap2 m1 mt3">
+  @for (ProjectSection of PageContent; track $index) {
+    <div class="wid90 mb1">
+      <app-paragraph [Title]="ProjectSection.title"></app-paragraph>
+      <div class="flex flex-wrap gap2">
+        @for (project of ProjectSection.projects; track $index) {
+          <app-big-project-card [ProjectType]="'Project'" [ProjectImage]="project.projectMainImage" [ProjectName]="project.projectName" [ProjectDescription]="project.projectDescription[0]"></app-big-project-card>
+        }
+      </div>
+    </div>
+  }
+  <div class="flex flex-column gap1">
+    <h2>Wanna see more ?</h2>
+    <div class="flex flex-column">
+      <h3 class="m1 mb1">visit my github</h3>
+      <app-btn-with-image [Image]="`assets/Social/GitHub.svg`" [link]="'https://github.com/Quantum-Youssef-Amr'" [Title]="`GitHub`"> </app-btn-with-image>
+    </div>
+  </div>
+</main>
