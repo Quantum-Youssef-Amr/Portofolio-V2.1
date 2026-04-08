@@ -4,7 +4,7 @@
   <app-paragraph class="mb1" [Title]="skillsSection.title"></app-paragraph>
   <div class="flex flex-wrap gap1">
     @for (skill of skillsSection.skills; track $index) {
-      <app-skill-card [gray]="false" [Image]="skill.skillImage" [Title]="skill.skillTitle" [progress]="skill.skillRate"></app-skill-card>
+      <app-skill-card [gray]="false" [Image]="skill.skillImage" [Title]="skill.skillTitle" [progress]="skill.skillRate" [title]="skill.skillRate === 6.9 ? 'Nice' : ''"></app-skill-card>
     }
   </div>
 }

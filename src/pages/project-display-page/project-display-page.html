@@ -1,0 +1,86 @@
+<div class="stack-container">
+  <div class="mainProjectImage" #mainProjectImage></div>
+  <div class="gradient"></div>
+  <div class="flex project-details m2">
+    <div class="flex gap1 projectText">
+      <img class="icon" [src]="ProjectData.projectIcon">
+      <div class="flex flex-column gap1">
+        <div>
+          <h2 class="titleSize">{{ProjectData.projectName}}</h2>
+          <h4 class="subtitle">{{ProjectData.projectVersion}}</h4>
+        </div>
+        <div class="flex gap1">
+          @for (img of ProjectData.projectTech; track $index) {
+            <img class="tech" [src]="img">
+          }
+        </div>
+      </div>
+    </div>
+    <div class="flex gap1 btns">
+      <app-btn-with-image class="btn-with-img" [Image]="`assets/Social/Itch.svg`" [link]="ProjectData.projectItch" [Title]="ProjectData.projectItch.length > 0 ? 'Play on itch' : 'Soon on itch'"> </app-btn-with-image>
+      <a class="appCard btn" [href]="ProjectData.projectUrl"><img src="assets/Social/link.svg"></a>
+      <a class="appCard btn" [href]="ProjectData.projectGithub"><img src="assets/Social/GitHub.svg"></a>
+    </div>
+  </div>
+</div>
+<div class="page-reset flex flex-column flex-center gap2">
+  @if (ProjectData.projectImages.length > 0) {
+  <div class="stack-container img-list wid90">
+    <div class="two-way-gradient"></div>
+    <div class="flex gap1 imgs">
+      @for (img of ProjectData.projectImages; track $index) {
+        <img class="img-list-img" [src]="img" (click)="OnPreviewImageClicked($index)">
+      }
+    </div>
+  </div>
+  }
+  <app-paragraph class="wid90" [Title]="`Description`" [paragraph]="[...ProjectData.projectDescription]"></app-paragraph>
+  <div class="Credits gap1 setwid90 flex flex-column">
+    <h3 class="titleSize">
+      Credits
+    </h3>
+    @for (cr of ProjectData.Credits; track $index) {
+      <div class="flex flex-column gap1">
+        <div class="flex gap1">
+          <h4 class="subtitle">{{cr.name}}</h4>
+          <h4 class="subtitle"> - </h4>
+          <h4 class="subtitle">{{cr.role}}</h4>
+        </div>
+        <div class="flex gap1">
+          @if (cr.LinkInLink) {
+            <a class="btn credit" [href]="cr.LinkInLink">
+              <img src="assets/Social/LinkedIn.svg">
+            </a>
+          }
+          @if (cr.GithubLink) {
+            <a class="btn credit" [href]="cr.GithubLink">
+              <img src="assets/Social/GitHub.svg">
+            </a>
+          }
+          @if (cr.itchLink) {
+            <a class="btn credit" [href]="cr.itchLink">
+              <img src="assets/Social/Itch.svg">
+            </a>
+          }
+        </div>
+      </div>
+    }
+  </div>
+  <div class="game-details setwid90 flex flex-column gap1">
+    <h3 class="titleSize">Project Details</h3>
+    <div class="flex flex-column">
+      <h5 class="subtitle mb05">Status: {{ProjectData.projectStatus}}</h5>
+      <h5 class="subtitle mb05">Created in: {{ProjectData.projectCreateYear}}</h5>
+      <h5 class="subtitle mb05">Last update in: {{ProjectData.projectLastUpdateYear}}</h5>
+      <h5 class="subtitle mb05">Project version: {{ProjectData.projectVersion}}</h5>
+      <h5 class="subtitle mb05">Available on: {{ProjectData.projectPlatform.join(', ')}}</h5>
+    </div>
+  </div>
+</div>
+<div class="squares"></div>
+<div #imgPreviewBox class="img-preview">
+  <div #imgPreview class="img-preview-img"></div>
+  <div class="close-btn" (click)="OnClosePreviewImage()">
+    <img src="assets/imgs/x.svg">
+  </div>
+</div>

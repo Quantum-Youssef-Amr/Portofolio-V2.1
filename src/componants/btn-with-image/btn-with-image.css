@@ -8,7 +8,7 @@
 
 .appCard{
   height: 5em;
-  width: 30em;
+  width: 100%;
   border-radius: calc(5em / 2);
   -webkit-border-radius: calc(5em / 2);
   -moz-border-radius: calc(5em / 2);

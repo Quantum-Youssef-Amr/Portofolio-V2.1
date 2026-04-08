@@ -17,6 +17,11 @@
   }
 }
 
+.main{
+  position: relative;
+  overflow: hidden;
+}
+
 .img-right-side{
   background-image: url('/assets/imgs/about_page_banner_right.png');
   background-position: right;
@@ -42,4 +47,36 @@
 
 app-contacts-card{
   z-index: 1;
+}
+
+.squares{
+  position: absolute;
+
+  width: 100%;
+  height: 40em;
+  z-index: -1;
+
+  pointer-events: none;
+
+  top: calc(100% - 40em);
+  left: 0px;
+
+  background: linear-gradient(to top, var(--fevColor), transparent 80%);
+
+  mask-image: url('/assets/imgs/bg.svg');
+  mask-repeat: repeat;
+  mask-size: 5em;
+
+  animation: bg-move 1s infinite linear;
+  -webkit-animation: bg-move 1s infinite linear;
+}
+
+@keyframes bg-move {
+  from{
+    mask-position: 0em 5em;
+  }
+
+  to{
+    mask-position: 0em 0em;
+  }
 }

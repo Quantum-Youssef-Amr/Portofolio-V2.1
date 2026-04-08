@@ -1,17 +1,17 @@
-<div class="appCard p1" [class.centered]="ProjectDescription.length === 0 && ProjectLogos.length === 0">
+<div class="appCard flex-column p1" [class.centered]="Project.projectDescription.length === 0 && Project.projectTech.length === 0">
   <span class="titleHolder">
     <span class="langsHolder">
-      @if(ProjectLogos.length > 0){
-        @for (image of ProjectLogos; track $index) {
+      @if(Project.projectTech.length > 0){
+        @for (image of Project.projectTech; track $index) {
           <img [src]="image">
         }
       }
     </span>
     <a class="link title" [href]="ProjectLink">
-      {{ProjectName}}
+      {{Project.projectName}}
     </a>
   </span>
-  @if(ProjectDescription.length > 0){
-    <h5 class="subtitle">{{ProjectDescription}}</h5>
+  @if(Project.projectDescription.length > 0){
+    <h5 class="subtitle">{{Project.projectDescription[0]}}</h5>
   }
 </div>

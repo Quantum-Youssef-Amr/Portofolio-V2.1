@@ -1,9 +1,10 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { ContactsCard } from "../contacts-card/contacts-card";
+import { TextCard } from "../text-card/text-card";
 
 @Component({
   selector: 'app-landing-hero',
-  imports: [ContactsCard],
+  imports: [ContactsCard, TextCard],
   templateUrl: './landing-hero.html',
   styleUrl: './landing-hero.css',
 })

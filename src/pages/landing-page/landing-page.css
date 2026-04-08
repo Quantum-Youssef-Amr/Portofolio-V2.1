@@ -6,32 +6,17 @@ main{
   margin: 0px 1em 0px 1em;
 }
 
-.highlight-cards{
-  position: absolute;
-  top: 77vh;
-
-  display: flex;
-  gap: 4em;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-
-  background: rgba(18,18,18,0.65);
-
-  backdrop-filter: blur(3px);
-
-  border-radius: 2em;
-  -webkit-border-radius: 2em;
-  -moz-border-radius: 2em;
-  -ms-border-radius: 2em;
-  -o-border-radius: 2em;
-}
-
 .gradient{
   pointer-events: none;
   background: linear-gradient(90deg, rgba(17,17,17,0) 50%, var(--bgColor) 95%);
   z-index: 1;
 }
+
+.Grid-Collection{
+  width: 90vw;
+
+}
+
 
 .seeMore{
   display: flex;

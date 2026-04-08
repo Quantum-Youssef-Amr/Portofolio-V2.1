@@ -1,4 +1,6 @@
 import { AfterContentInit, Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { project } from '../../app-types.model';
 
 @Component({
   selector: 'app-big-project-card',
@@ -7,13 +9,16 @@ import { AfterContentInit, Component, Input } from '@angular/core';
   styleUrl: './big-project-card.css',
 })
 export class BigProjectCard implements AfterContentInit {
-  @Input() ProjectImage: string = "";
-  @Input() ProjectName: string = "";
-  @Input() ProjectDescription: string = "";
-  @Input() ProjectType: 'Project' | 'Game' = 'Project';
+  @Input() Project!: project;
   ProjectLink: string = '';
 
+  constructor(private router: Router){}
+
   ngAfterContentInit(): void {
-    this.ProjectLink = `/${this.ProjectType == 'Project' ? 'projects' : 'games'}/${this.ProjectName}`;
+    this.ProjectLink = `/${this.Project.projectType === 'Project' ? 'projects' : 'games'}/${this.Project.projectName}`;
+  }
+
+  OnClickLink(){
+    this.router.navigate([this.ProjectLink], {state: {projectData: this.Project}});
   }
 }

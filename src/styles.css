@@ -92,6 +92,10 @@ body{
   max-width: 90%;
 }
 
+.setwid90{
+  width: 90%;
+}
+
 .wid80{
   max-width: 80%;
 }
