@@ -1,14 +1,18 @@
-.stack-container{
-  width: 12em;
-  height: 11em;
-}
-
-svg{
-  width: 100%;
+.tip{
+  display: flex;
+  width: 8em;
+  height: fit-content;
+  background-color: #222;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
 }
 
 .massage{
-  width: 100%;
-  padding: 0em 1.5em 0em 1.5em;
-}
+  text-wrap-mode: wrap;
+  text-wrap-style: pretty;
 
+  text-align: center;
+}

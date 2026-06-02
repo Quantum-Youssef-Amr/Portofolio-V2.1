@@ -84,7 +84,7 @@ body{
 }
 
 .p2{
-  padding: 1em;
+  padding: 2em;
 }
 
 
@@ -147,7 +147,11 @@ body{
 }
 
 .gap2{
-  gap: 2em
+  gap: 2em;
+}
+
+.grey{
+  color: #a3a3a3;
 }
 
 .btnlink{
@@ -188,14 +192,13 @@ body{
 .iconLink{
   svg{
     width: 2.5em;
-
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-
-    &:hover{
+    &:hover
+    {
       fill: var(--fevColor);
       transform: scale(1.2);
       -webkit-transform: scale(1.2);
@@ -220,7 +223,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(54,54,54,0.25);
+  background: rgb(23, 23, 23);
   border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;

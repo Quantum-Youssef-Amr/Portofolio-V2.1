@@ -3,7 +3,7 @@ export type timelineNode = {title: string, massage: string};
 
 
 export type skillPar = {title: string, skills: Array<skill>}
-export type skill = {skillImage: string, skillTitle: string, skillRate: number};
+export type skill = {skillImage: string, skillTitle: string, skillRate: number, skillNote:string};
 
 export type project = {
   projectMainImage: string,

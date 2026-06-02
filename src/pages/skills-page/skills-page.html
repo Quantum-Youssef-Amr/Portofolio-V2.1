@@ -2,9 +2,9 @@
 <app-paragraph  [Title]="`My Skills`" [paragraph]="['All scores in this page is personal evaluation']"></app-paragraph>
 @for (skillsSection of skills; track $index) {
   <app-paragraph class="mb1" [Title]="skillsSection.title"></app-paragraph>
-  <div class="flex flex-wrap gap1">
+  <div class="flex flex-wrap gap2 skills">
     @for (skill of skillsSection.skills; track $index) {
-      <app-skill-card [gray]="false" [Image]="skill.skillImage" [Title]="skill.skillTitle" [progress]="skill.skillRate" [title]="skill.skillRate === 6.9 ? 'Nice' : ''"></app-skill-card>
+      <app-skill-card [gray]="false" [Image]="skill.skillImage" [Title]="skill.skillTitle" [progress]="skill.skillRate" [title]="skill.skillRate === 6.9 ? 'Nice' : ''" [Note]="skill.skillNote"></app-skill-card>
     }
   </div>
 }

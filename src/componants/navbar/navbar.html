@@ -1,4 +1,4 @@
-<div class="nav p2" [class.scrolled]="is_scrolled">
+<div class="nav p2" [class.scrolled]="">
   <span class="navtitle">
   <svg width="50" height="41.865" viewBox="0 0 50 41.865" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g>
@@ -8,7 +8,7 @@
 </svg>
     <h5>Youssef Amr</h5>
   </span>
-  <span class="links">
+  <span #links class="links" (mouseenter)="onMouseOverMenu()" (mouseleave)="onMouseOutMenu()">
     <ul>
       <li><a class="link" href="/">Home</a></li>
       <li><a class="link" href="/about">About</a></li>
@@ -17,5 +17,8 @@
       <li><a class="link" href="/games">Games</a></li>
       <li><a class="link" href="/contacts">Contact me</a></li>
     </ul>
+  </span>
+  <span class="Ham-menu">
+    <img src="assets/imgs/Hum-menu.png" alt="menu" (click)="OnClickMenu()" (mouseenter)="onMouseOverMenu()" (mouseleave)="onMouseOutMenu()">
   </span>
 </div>

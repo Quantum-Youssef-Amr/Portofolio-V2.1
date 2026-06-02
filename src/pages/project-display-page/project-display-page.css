@@ -1,6 +1,6 @@
 .stack-container{
   width: 100%;
-  height: calc(100vh - 10em);
+  height: 40em;
 
   .mainProjectImage{
     background-size: cover;
@@ -18,6 +18,7 @@
 }
 
 .imgs{
+  position: relative;
   overflow: visible hidden;
 }
 
@@ -31,9 +32,9 @@
 
   justify-content: space-between;
 
-  height: 20%;
+  height: 15em;
   width: calc(100% - 4em);
-  top: calc(100% - 20% - 4em);
+  top: calc(100% - 20em);
 
   .icon{
     width: 10em;
@@ -51,6 +52,10 @@
     align-items: center;
     text-align: left;
   }
+
+  @media (max-width: 750px){
+    flex-direction: column;
+  }
 }
 
 .btns{
@@ -66,9 +71,10 @@
   width:  5em;
   height: 5em;
 
+  flex-shrink: 0;
+
   img{
     width: 60%;
-    height: 60%;
   }
 
   border-radius: 50%;

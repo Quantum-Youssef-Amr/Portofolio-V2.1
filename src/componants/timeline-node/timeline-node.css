@@ -1,5 +1,9 @@
 .flex{
   position: relative;
+
+  @media (max-width: 750px){
+    flex-direction: column;
+  }
 }
 
 .gap-2{
@@ -15,8 +19,25 @@
 
 .line{
   svg{
-    width: calc(( 80vw / var(--numberOfNodes)) - 4em);
-    height: 1em;
+
+    @media (min-width:750px) {
+        height: 1em;
+        width: calc(( 80vw / var(--numberOfNodes)) - 4em);
+    }
+
+    @media (max-width:750px) {
+      width: 4em;
+      height: 1em;
+    }
+  }
+
+
+  @media (max-width: 750px){
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
   }
 }
 
@@ -59,6 +80,7 @@
   -moz-transition: all 0.3s ease-out;
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
+
   transform: translate(-50% , -50%);
   -webkit-transform: translate(-50% , -50%);
   -moz-transform: translate(-50% , -50%);
@@ -66,6 +88,16 @@
   -o-transform: translate(-50% , -50%);
 }
 
+.bigTooltip{
+
+  @media (max-width: 750px){
+     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+}
 
 .show{
   visibility: visible;
@@ -74,6 +106,11 @@
 
 .show.line{
   top: 600%;
+
+  @media (max-width: 750px){
+    top: 300%;
+    left: -100%;
+  }
 }
 
 .show.node{

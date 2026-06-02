@@ -12,18 +12,19 @@ import { TextCard } from "../text-card/text-card";
 export class LandingHero implements OnInit {
   public OnesZeros  = signal<string>("");
   ngOnInit(): void {
-    this.OnesZeros.set(this.getOnesZeros())
+    this.OnesZeros.set(this.getOnesZeros());
   }
 
   getOnesZeros() : string{
-    let binary = "";
-
-    for (let i = 0; i < 5000; i++) {
-      if(i % 4 === 0 && i !== 0){
-        binary += ".";
-      }
-      binary += Math.random() > 0.5 ? "1" : "0";
-    }
-    return binary;
+    let Text = "Started at 11 with Scratch. Built Energy at 14. Lost everything at 18. Delivered food on a bicycle. Co-founded a studio at 19. Built a top 7 percent GMTK game. Best friend erased my name. Left. Built 10 games, 8 compilers, an FTL paper. Founded Axiom. Ride 34 km daily. Look at the sky. Say one more day. Success is not what you have. It is what you are when you have nothing. I am what I am when I have nothing. A builder. A rider. Still building. Still riding.";
+    return this.stringToBinaryText(Text);
   }
+
+
+  stringToBinaryText(input: string): string {
+  return Array.from(input)
+    .map(char => char.charCodeAt(0).toString(2).padStart(8, '0'))
+    .join('');
+}
+
 }
