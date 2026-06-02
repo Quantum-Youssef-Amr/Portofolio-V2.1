@@ -238,10 +238,22 @@ AboutPageContent: Array<aboutPar> = [
             skillNote: "Created game assets, UI elements, and pixel art for multiple projects."
           },
           {
+            skillImage: "assets/game dev/Pixelorama.png",
+            skillTitle: "Pixelorama",
+            skillRate: 7.75,
+            skillNote: "Pixel art for Starfish game and 2-bit retro aesthetic in Infected (tower defense)."
+          },
+          {
             skillImage: "assets/game dev/Blender.svg",
             skillTitle: "Blender 3D art",
             skillRate: 7,
             skillNote: "Basic 3D modeling. Used for prototyping and asset creation."
+          },
+          {
+          skillImage: "assets/game dev/lmms.svg",
+          skillTitle: "LMMS studio",
+          skillRate: 8,
+          skillNote: "Composed chiptune-style soundtracks for Console and Operator. Designed SFX for multiple games."
           }
         ]
       },
