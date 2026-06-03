@@ -889,10 +889,10 @@ AboutPageContent: Array<aboutPar> = [
       title: 'System projects',
       projects: [
         {
-          projectMainImage: "", // Add screenshot of shell running commands
-          projectImages: [], // Add multiple: pipe example, redirection, background process, history
-          projectIcon: "", // Add terminal/console icon
-          projectName: "myShell - Unix Shell Implementation in C",
+          projectMainImage: "assets/Projects/System/MyShell/1.png",
+          projectImages: ["assets/Projects/System/MyShell/1.png", "assets/Projects/System/MyShell/2.png","assets/Projects/System/MyShell/3.png","assets/Projects/System/MyShell/4.png","assets/Projects/System/MyShell/5.png","assets/Projects/System/MyShell/6.png"],
+          projectIcon: "",
+          projectName: "myShell-Unix-Shell-Implementation-in-C",
           projectDescription: [
             "Feature-complete Unix shell written in C from scratch — supports pipes, redirection, background execution, signal handling, and command history.",
             "Core functionality: Command parsing, fork/exec process creation, foreground/background process management with PID tracking.",
@@ -911,7 +911,8 @@ AboutPageContent: Array<aboutPar> = [
           projectVersion: "1.0.0",
           projectTech: [
             "assets/langs/C.svg",
-            // Add if you have these icons: "assets/utls/linux.svg", "assets/utls/bash.svg"
+            "assets/utls/linux.svg",
+            "assets/utls/bash.svg"
           ],
           projectUrl: "",
           projectItch: "",

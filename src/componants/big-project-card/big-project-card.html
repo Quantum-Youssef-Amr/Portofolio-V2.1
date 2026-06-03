@@ -1,11 +1,11 @@
-<div class="project-card flex-column appCard">
-    @if(Project.projectMainImage !== ""){
-      <img class="project-image" [src]="Project.projectMainImage">
-    }
+<div #main class="project-card flex-column appCard" (click)="OnClickLink()">
+    <div class="gradient"></div>
     <div class="p1">
-      <a class="link" (click)="OnClickLink()">
+      <a class="link">
         <h3 class="title mb05 link">{{Project.projectName}}</h3>
       </a>
-      <h5 class="text-holder subtitle">{{Project.projectDescription[0]}}</h5>
+    </div>
+    <div class="tip p1">
+      <h5 class=" subtitle centered">{{Project.projectDescription[0]}}</h5>
     </div>
 </div>

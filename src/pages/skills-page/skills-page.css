@@ -23,7 +23,6 @@ app-skill-card{
   -moz-border-radius: 1em;
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
-
 }
 
 app-skill-card:hover{
@@ -36,6 +35,6 @@ app-skill-card:hover{
 }
 
 app-skill-card:hover ~ app-skill-card, app-skill-card:has(~app-skill-card:hover){
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  filter: blur(5px) grayscale(80%);
+  -webkit-filter: blur(5px) grayscale(80%);
 }

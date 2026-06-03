@@ -1,10 +1,10 @@
-<main class="flex flex-column gap2 m1 mt3">
+<main class="flex flex-column gap2 m1 mt5">
   @for (ProjectSection of projects; track $index) {
     <div class="wid90 mb1">
       <app-paragraph [Title]="ProjectSection.title"></app-paragraph>
-      <div class="flex flex-wrap gap2">
+      <div class="flex flex-wrap gap2 p1">
         @for (project of ProjectSection.projects; track $index) {
-          <app-big-project-card [Project]="project"></app-big-project-card>
+          <app-big-project-card class="card" [Project]="project"></app-big-project-card>
         }
       </div>
     </div>

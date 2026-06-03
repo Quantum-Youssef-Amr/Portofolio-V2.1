@@ -1,18 +1,76 @@
 .appCard{
-  justify-content: flex-start;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+.p1{
+  z-index: 10;
 }
 
 .project-card{
   width: 20em;
-  height: 28em;
+  height: 13em;
+}
 
-  overflow: hidden;
+.title{
+  font-size: 1.2em;
 }
 
 .project-image{
   width: 100%;
+  height: 10em;
+}
+
+.gradient{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--bgColor) 80%);
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
 }
 
 .text-holder{
   overflow: hidden scroll;
+}
+
+
+.appCard:hover .tip{
+  opacity: 1;
+  top: 75%;
+}
+
+.tip{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18em;
+  height: fit-content;
+  opacity: 0;
+  background-color: #222;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
 }
