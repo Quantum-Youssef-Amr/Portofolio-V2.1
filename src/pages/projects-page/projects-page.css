@@ -23,4 +23,17 @@
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
+
+}
+
+@media (max-width: 750px){
+  .projects > *{
+    width: 90% !important;
+  }
+
+  .projects{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

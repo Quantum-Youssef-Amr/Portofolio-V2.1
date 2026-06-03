@@ -30,11 +30,12 @@
 
 .project-details{
 
-  justify-content: space-between;
+  justify-content: space-around;
 
   height: 15em;
   width: calc(100% - 4em);
   top: calc(100% - 20em);
+
 
   .icon{
     width: 10em;
@@ -84,6 +85,13 @@
   -o-border-radius: 50%;
 }
 
+
+@media (max-width: 750px){
+  .btns{
+    justify-content: space-evenly;
+  }
+}
+
 .credit{
   width: 2em;
   height: 2em;
@@ -107,7 +115,7 @@
   top: calc(100% - 40em);
   left: 0px;
 
-  background: linear-gradient(to top, var(--fevColor), transparent 80%);
+  background: linear-gradient(to top, var(--gridColor), transparent 80%);
 
   mask-image: url('/assets/imgs/bg.svg');
   mask-repeat: repeat;

@@ -76,14 +76,15 @@
   @media (max-width: 750px){
     display: none;
     opacity: 0;
+    font-size: 1.1em;
   }
 }
 
 .Ham-menu{
   display: none;
   img{
-    width: 1.5em;
-    margin-right: 1em;
+    width: 2em;
+    margin-right: 2em;
   }
 
   @media (max-width: 750px){

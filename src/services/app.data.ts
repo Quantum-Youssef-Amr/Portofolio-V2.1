@@ -18,7 +18,7 @@ AboutPageContent: Array<aboutPar> = [
       title: "Who I am",
       paragraphs: [
         "I'm Youssef Amr — 21 years old, human (or ? :P). Online, some call me The Solo Dev. I'm a game developer, front-end engineer, and data scientist who loves turning wild ideas into things you can actually play, see, or learn from.",
-        "I'm currently a data science major at Alexandria University, Egypt. But my journey started long before that. I wrote my first line of code at 11 — Scratch, then Python, then assembly. By 14, I'd built my first complete game (Energy, a city builder about pollution). By 16, I was freelancing. By 19, I was leading game jam teams.",
+        "I'm currently a data science major at Alexandria University, Egypt. But my journey started long before that. I wrote my first line of code at 11 — Scratch, then Python, then assembly. By 14, I'd built my first complete game (Energy, a city builder about pollution). By 16, I was freelancing. By 20, I was leading game jam teams.",
         "That's 10 years of learning, failing, and shipping. I've built computers, coded in assembly, and climbed my way up to full-scale projects in Unity, Angular, and AWS."
       ]
     },
@@ -40,27 +40,35 @@ AboutPageContent: Array<aboutPar> = [
   TimelineData: Array<timelineNode> = [
      {
           title: "2016",
-          massage: "discovering what computers can do and making small game using scratch"
+          massage: "Wrote my first line of code, Built small games in Scratch."
+        },
+        {
+          title: "2018",
+          massage: "Built my first computer game Energy using blender."
         },
         {
           title: "2019",
-          massage: "making small scale games with UPBGE game engine (blender plugin)"
+          massage: "Moved to UPBGE (blender game engine), made small 3D games."
         },
         {
           title: "2020",
-          massage: "switching to unity and learning C# and made my first game using it"
+          massage: "switched to Unity, learned C#, made my first complete game using Unity."
+        },
+        {
+          title: "2021",
+          massage: "Began freelancing as a web developer. Built website, learned client work."
         },
         {
           title: "2023",
-          massage: "made the decision to enter FCDS and begun my real journey"
+          massage: "Entered Alexandria University's Faculty of computer and Data science."
         },
         {
           title: "2025",
-          massage: "Entered GMTK game jams with OrPita Studio as lead Developer, achieving 600/10k"
+          massage: "Led OrPita Studio in GMTK Game Jam. Placed Top 7%, Built in 3 days. left the studio later that year."
         },
         {
           title: "2026",
-          massage: "focusing on making my full scale games and enhancing my portfolio"
+          massage: "Founded Axiom Studio. Building my portfolio. Games shipping."
         },
         {
           title: "Now",

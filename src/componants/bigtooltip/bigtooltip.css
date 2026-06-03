@@ -12,7 +12,7 @@
 
 .massage{
   text-wrap-mode: wrap;
-  text-wrap-style: pretty;
+  text-wrap-style: balance;
 
   text-align: center;
 }

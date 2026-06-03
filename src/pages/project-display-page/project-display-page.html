@@ -43,7 +43,7 @@
       </div>
     </div>
     }
-    <app-paragraph class="wid90" [Title]="`Description`" [paragraph]="[...ProjectData.projectDescription]"></app-paragraph>
+    <app-paragraph class="setwid90" [Title]="`Description`" [paragraph]="[...ProjectData.projectDescription]"></app-paragraph>
     <div class="Credits gap1 setwid90 flex flex-column">
       <h3 class="titleSize">
         Credits
@@ -86,7 +86,7 @@
       </div>
     </div>
   </div>
-  <div class="squares"></div>
+  <div class="squares" [style.--gridColor]="gridColor()"></div>
   <div #imgPreviewBox class="img-preview">
     <div #imgPreview class="img-preview-img"></div>
     <div class="close-btn" (click)="OnClosePreviewImage()">

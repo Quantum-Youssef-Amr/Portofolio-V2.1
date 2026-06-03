@@ -1,8 +1,8 @@
 <main class="flex flex-column gap2 m1 mt5">
   @for (ProjectSection of projects; track $index) {
-    <div class="wid90 mb1">
+    <div class="full mb1 flex-center">
       <app-paragraph [Title]="ProjectSection.title"></app-paragraph>
-      <div class="flex flex-wrap gap2 p1">
+      <div class="flex flex-wrap gap2 p1 projects ">
         @for (project of ProjectSection.projects; track $index) {
           <app-big-project-card class="card" [Project]="project"></app-big-project-card>
         }
