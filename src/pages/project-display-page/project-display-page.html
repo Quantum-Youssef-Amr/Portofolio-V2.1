@@ -4,7 +4,9 @@
     <div class="gradient"></div>
     <div class="flex project-details m2">
       <div class="flex gap1 projectText">
-        <img class="icon" [src]="ProjectData.projectIcon">
+        @if (ProjectData.projectIcon) {
+          <img class="icon" [src]="ProjectData.projectIcon">
+        }
         <div class="flex flex-column gap1">
           <div>
             <h2 class="titleSize">{{ProjectData.projectName}}</h2>
@@ -18,9 +20,15 @@
         </div>
       </div>
       <div class="flex gap1 btns">
-        <app-btn-with-image class="btn-with-img" [Image]="`assets/Social/Itch.svg`" [link]="ProjectData.projectItch" [Title]="ProjectData.projectItch.length > 0 ? 'Play on itch' : 'Soon on itch'"> </app-btn-with-image>
-        <a class="appCard btn" [href]="ProjectData.projectUrl"><img src="assets/Social/link.svg"></a>
-        <a class="appCard btn" [href]="ProjectData.projectGithub"><img src="assets/Social/GitHub.svg"></a>
+        @if(ProjectData.projectItch.length > 0){
+          <app-btn-with-image class="btn-with-img" [Image]="`assets/Social/Itch.svg`" [link]="ProjectData.projectItch" [Title]="ProjectData.projectItch.length > 0 ? 'Play on itch' : 'Soon on itch'"> </app-btn-with-image>
+        }
+        @if(ProjectData.projectUrl.length > 0){
+          <a class="appCard btn" [href]="ProjectData.projectUrl"><img src="assets/Social/link.svg"></a>
+        }
+        @if(ProjectData.projectGithub.length > 0){
+          <a class="appCard btn" [href]="ProjectData.projectGithub"><img src="assets/Social/GitHub.svg"></a>
+        }
       </div>
     </div>
   </div>

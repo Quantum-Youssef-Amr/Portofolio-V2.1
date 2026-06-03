@@ -1,5 +1,5 @@
 <main class="flex flex-column gap2 m1 mt3">
-  @for (ProjectSection of PageContent; track $index) {
+  @for (ProjectSection of projects; track $index) {
     <div class="wid90 mb1">
       <app-paragraph [Title]="ProjectSection.title"></app-paragraph>
       <div class="flex flex-wrap gap2">

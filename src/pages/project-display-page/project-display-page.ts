@@ -46,13 +46,30 @@ export class ProjectDisplayPage implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
-    const m_projectNameFromUrl = this.router.url.split('/').at(-1);
-    this._app_data.GamesPageContent.projects.forEach(project => {
-      if(project.projectName == m_projectNameFromUrl){
-        this.ProjectData = project;
-        return;
-      }
-    })
+    let m_projectNameFromUrl = this.router.url.split('/').at(-1) ?? "";
+    let m_projectTypeFromUrl = this.router.url.split('/').at(-2) ?? "";
+
+    if(m_projectTypeFromUrl == 'projects'){
+      this._app_data.ProjectsPageContent.forEach(projectCat => {
+        projectCat.projects.forEach(project => {
+          if(project.projectName.toLowerCase().trim() == m_projectNameFromUrl.toLowerCase().trim()){
+            this.ProjectData = project;
+            console.log(project.projectName);
+            return;
+          }
+        })
+      })
+    }
+
+    if(m_projectTypeFromUrl == "games"){
+      this._app_data.GamesPageContent.projects.forEach(project => {
+        if(project.projectName.toLowerCase().trim() == m_projectNameFromUrl.toLowerCase().trim()){
+          this.ProjectData = project;
+          console.log(project.projectName);
+          return;
+        }
+      })
+    }
   }
 
   OnPreviewImageClicked(idx: number){

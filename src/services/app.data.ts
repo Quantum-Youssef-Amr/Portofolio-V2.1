@@ -315,9 +315,9 @@ AboutPageContent: Array<aboutPar> = [
     title: 'Games',
     projects: [
       {
-        projectMainImage: 'assets/Projects/Infected/Infected.png',
-        projectImages: ['assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png','assets/Projects/Infected/Infected.png'],
-        projectIcon: 'assets/Projects/Infected/icon.png',
+        projectMainImage: 'assets/Projects/Game Dev/Infected/Infected.png',
+        projectImages: ['assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png','assets/Projects/Game Dev/Infected/Infected.png'],
+        projectIcon: 'assets/Projects/Game Dev/Infected/icon.png',
         projectName: 'Infected',
         projectDescription: [
           ' is a 2D tower defense game set in a collapsing computer system overrun by viruses. Strategize, adapt, and survive as enemies evolve with every choice you make. Balance combat, resource management, and survival in a world on the brink of collapse.'
@@ -347,4 +347,262 @@ AboutPageContent: Array<aboutPar> = [
       }
     ]
   }
+
+  ProjectsPageContent: Array<projectSection> = [
+    {
+      title: 'Front-end projects',
+      projects: [
+            {
+          projectMainImage: "assets/Projects/front-end/PlantPal/1.png",
+          projectImages: [
+            "assets/Projects/front-end/PlantPal/1.png",
+            "assets/Projects/front-end/PlantPal/2.png",
+            "assets/Projects/front-end/PlantPal/3.png",
+            "assets/Projects/front-end/PlantPal/4.png"
+          ],
+          projectIcon: "assets/Projects/front-end/PlantPal/PlanetPalIcon.png",
+          projectName: "PlantPal",
+          projectDescription: [
+          "First complete web project — learned Bootstrap 5, responsive design, and custom CSS from scratch.",
+          "Landing page for a plant care reminder app concept. Built as coursework for LUC 2 (Bootstrap and Web Development).",
+          "Features dark theme with lime green accents, testimonials, feature cards, email subscription form, and animated plant icon in footer.",
+          "Demonstrates Bootstrap grid system, mobile-first layout, sticky branding, and Google Fonts integration.",
+          "The project that taught me how to stop killing CSS layouts and keep plants (theoretically) alive.",
+          ],
+          projectPlatform: ["Web"],
+          projectType: "Project",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/HTML.svg",
+            "assets/langs/CSS.svg",
+            "assets/langs/JS.svg"
+          ],
+          projectUrl: "https://quantum-youssef-amr.github.io/PlantPal-webdevCourse/",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/PlantPal-webdevCourse",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Solo Developer",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          }
+        ]
+        },
+        {
+        projectMainImage: "assets/Projects/front-end/Postfolio/1.png",
+        projectImages: ["assets/Projects/front-end/Postfolio/1.png", "assets/Projects/front-end/Postfolio/2.png", "assets/Projects/front-end/Postfolio/3.png", "assets/Projects/front-end/Postfolio/4.png"],
+        projectIcon: "assets/Projects/front-end/Postfolio/icon.png",
+        projectName: "Postfolio",
+        projectDescription: [
+          "Second university project — Angular course exercise using vanilla JavaScript, HTML, and CSS.",
+          "Learned how to work with APIs and Promises for asynchronous data fetching.",
+          "Social media style post feed with user authentication flow (register/login).",
+          "Built as coursework to understand API integration before moving to Angular's HttpClient.",
+          "Vanilla implementation — no framework, just raw JS promises and DOM manipulation.",
+        ],
+        projectPlatform: ["Web"],
+        projectType: "Project",
+        projectVersion: "1.0.0",
+        projectTech: [
+          "assets/langs/HTML.svg",
+          "assets/langs/CSS.svg",
+          "assets/langs/JS.svg"
+        ],
+        projectUrl: "https://quantum-youssef-amr.github.io/going-angular-course-project-1/",
+        projectItch: "",
+        projectGithub: "https://github.com/Quantum-Youssef-Amr/going-angular-course-project-1",
+        projectCreateYear: "2025", // Adjust based on actual course date
+        projectLastUpdateYear: "2025",
+        projectStatus: "complete",
+        Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Solo Developer",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          }
+        ]
+        },
+        {
+          projectMainImage: "assets/Projects/front-end/Taskflow/1.png",
+          projectImages: ["assets/Projects/front-end/Taskflow/1.png", "assets/Projects/front-end/Taskflow/2.png", "assets/Projects/front-end/Taskflow/3.png","assets/Projects/front-end/Taskflow/4.png", "assets/Projects/front-end/Taskflow/5.png", "assets/Projects/front-end/Taskflow/6.png", "assets/Projects/front-end/Taskflow/7.png", "assets/Projects/front-end/Taskflow/8.png", "assets/Projects/front-end/Taskflow/9.png", "assets/Projects/front-end/Taskflow/10.png"],
+          projectIcon: "",
+          projectName: "TaskFlow",
+          projectDescription: [
+            "Full Kanban-style task management web application — university web course project, scored 95%.",
+            "Team collaboration tool with project boards, task assignments, due dates, priorities, comments, and attachments.",
+            "Features role-based permissions (manager vs member), drag-drop task status updates, and activity tracking.",
+            "Built with vanilla HTML/CSS/JS frontend, Node.js backend, SQLite database — no frontend frameworks.",
+            "Includes authentication system, demo accounts (manager@taskflow.com / user@taskflow.com, password: 123456), and responsive UI.",
+            "Dashboard shows task completion trends, total/completed/overdue counts, and team member management (manager-only access).",
+          ],
+          projectPlatform: ["Web"],
+          projectType: "Project",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/HTML.svg",
+            "assets/langs/CSS.svg",
+            "assets/langs/JS.svg",
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/TaskFlow2nd",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2026",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "frontend engineer",
+              LinkInLink: "https://www.linkedin.com/in/youssef-amr-2ba9962b5",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+            ,
+            {
+              name: 'AbdAll Ahmad',
+              role: 'Backend engineer',
+              LinkInLink: 'https://www.linkedin.com/in/abdulluh-samy-672342207',
+              GithubLink: 'https://github.com/Abdulluh11235',
+              itchLink: ''
+            }
+          ]
+        },
+        {
+        projectMainImage: "assets/Projects/front-end/To-do/1.png",
+        projectImages: ["assets/Projects/front-end/To-do/1.png", "assets/Projects/front-end/To-do/2.png", "assets/Projects/front-end/To-do/3.png"],
+        projectIcon: "",
+        projectName: "To-Do",
+        projectDescription: [
+          "Simple login and todo list application — built to learn JavaScript fundamentals before Angular.",
+          "Part of university web course: authentication flow, DOM manipulation, and client-side state management.",
+          "Features hardcoded login (username: admin, password: 123) with 2-second redirect to todo dashboard.",
+          "Todo functionality: add tasks, mark as completed (strikethrough), delete tasks. Preloaded with example tasks.",
+          "No backend or persistent storage — pure frontend demo. Tasks reset on page refresh.",
+          "Built with HTML5, CSS3, Bootstrap 5, and vanilla JavaScript.",
+        ],
+        projectPlatform: ["Web"],
+        projectType: "Project",
+        projectVersion: "1.0.0",
+        projectTech: [
+          "assets/langs/HTML.svg",
+          "assets/langs/CSS.svg",
+          "assets/langs/JS.svg"
+        ],
+        projectUrl: "https://quantum-youssef-amr.github.io/To-Do-app/",
+        projectItch: "",
+        projectGithub: "https://github.com/Quantum-Youssef-Amr/To-Do-app",
+        projectCreateYear: "2025",
+        projectLastUpdateYear: "2025",
+        projectStatus: "complete",
+        Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Solo Developer",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          }
+        ]
+        },
+        {
+        projectMainImage: "assets/Projects/front-end/Weather-wizard/1.png",
+        projectImages: ["assets/Projects/front-end/Weather-wizard/1.png", "assets/Projects/front-end/Weather-wizard/2.png","assets/Projects/front-end/Weather-wizard/3.png","assets/Projects/front-end/Weather-wizard/4.png","assets/Projects/front-end/Weather-wizard/5.png"],
+        projectIcon: "assets/Projects/front-end/Weather-wizard/icon.svg",
+        projectName: "Weather-Wizard",
+        projectDescription: [
+          "Final Angular course project — placed 3rd out of 150 students learning Angular.",
+          "Interactive weather dashboard using OpenWeather API for real-time global weather data.",
+          "Features: current conditions (temperature, humidity, wind, UV), 5-day forecast, and hourly breakdown.",
+          "Includes creative extras: pressure readings, moon phase, and '0% Chance of Aliens' for personality.",
+          "Built with modular Angular components, reactive city search, and responsive design for mobile/desktop.",
+          "Demonstrates API integration, environment configuration, error handling, and clean UI architecture.",
+          "Collaborative project with Youssef Abd Elmohest and Youssef Hessan — full team effort.",
+        ],
+        projectPlatform: ["Web"],
+        projectType: "Project",
+        projectVersion: "1.0.0",
+        projectTech: [
+          "assets/langs/TS.svg",
+          "assets/langs/HTML.svg",
+          "assets/langs/CSS.svg",
+          "assets/Frameworks/Angular.svg"
+        ],
+        projectUrl: "https://weather-wizard-ddc20.web.app/",
+        projectItch: "",
+        projectGithub: "https://github.com/Quantum-Youssef-Amr/final-angular-course-project",
+        projectCreateYear: "2025",
+        projectLastUpdateYear: "2025",
+        projectStatus: "complete",
+        Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Project Manager, frontend lead",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          },
+          {
+            name: "Youssef Abd Elmohest",
+            role: "Co-Developer",
+            LinkInLink: "",
+            GithubLink: "",
+            itchLink: ""
+          },
+          {
+            name: "Youssef Hessan",
+            role: "Co-Developer",
+            LinkInLink: "",
+            GithubLink: "",
+            itchLink: ""
+          }
+        ]
+        },
+        {
+        projectMainImage: "assets/Projects/front-end/old-portfolio/1.png",
+        projectImages: ["assets/Projects/front-end/old-portfolio/1.png", "assets/Projects/front-end/old-portfolio/2.png", "assets/Projects/front-end/old-portfolio/3.png", "assets/Projects/front-end/old-portfolio/4.png", "assets/Projects/front-end/old-portfolio/5.png"],
+        projectIcon: "",
+        projectName: "TheSoloDev-Portfolio",
+        projectDescription: [
+          "First version of my personal portfolio — showcasing my identity as TheSoloDev.",
+          "Features: 'Who I'm' intro, Design & Productivity projects (Study on IA crimes, DataTools Wars, Library Management System, Weather Wizard),",
+          "My Games section featuring Climb It (lava-rising arcade game with saw blades),",
+          "Skills, Projects, Games, and Contact sections with email/LinkedIn/GitHub links.",
+          "Single-page layout with professional dark/light design and clean typography.",
+          "This was my old list-style portfolio before upgrading to the multi-page interactive Angular version.",
+        ],
+        projectPlatform: ["Web"],
+        projectType: "Project",
+        projectVersion: "1.0.0",
+        projectTech: [
+          "assets/langs/HTML.svg",
+          "assets/langs/CSS.svg",
+          "assets/langs/JS.svg",
+          "assets/Frameworks/Angular.svg"
+        ],
+        projectUrl: "",
+        projectItch: "",
+        projectGithub: "https://github.com/Quantum-Youssef-Amr/Portfolio",
+        projectCreateYear: "2025",
+        projectLastUpdateYear: "2025",
+        projectStatus: "complete",
+        Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Solo Developer",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          }
+        ]
+        }
+      ]
+    },
+  ];
 }
