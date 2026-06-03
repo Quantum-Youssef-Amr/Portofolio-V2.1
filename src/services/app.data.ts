@@ -604,5 +604,332 @@ AboutPageContent: Array<aboutPar> = [
         }
       ]
     },
+    {
+      title: 'Data science projects',
+      projects: [
+        {
+          projectMainImage: "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/1.png", // Add a screenshot of the pairplot or ROC curves if you have one
+          projectImages: ["assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/1.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/2.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/3.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/4.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/5.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/6.png"],
+          projectIcon: "",
+          projectName: "Iris-Classification-SVM-vs-Neural-Network",
+          projectDescription: [
+            "End-to-end machine learning project comparing Support Vector Machine (SVM) and Feedforward Neural Network on the classic Iris dataset.",
+            "Dataset: 150 samples, 4 features (sepal length/width, petal length/width), 3 classes (setosa, versicolor, virginica).",
+            "Workflow: EDA with pairplot visualization, train-test split (70/30 with stratification), StandardScaler normalization.",
+            "SVM Results: 93.3% accuracy, weighted F1-score 0.93 — near-perfect classification with RBF kernel.",
+            "Neural Network Results: 68.9% accuracy — 3-layer architecture (10→8→3 neurons, ReLU + softmax, Adam optimizer, 50 epochs).",
+            "ROC-AUC comparison: SVM achieved ~0.99-1.00 across all classes; NN had lower performance on class 1 (AUC ~0.81).",
+            "Includes loss curve visualization for neural network training and multiclass ROC curves for both models.",
+            "Key takeaway: SVM with RBF kernel significantly outperforms simple neural network on this small, well-structured dataset.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/tensorflow.png",
+            "assets/libs/scikit-learn.png"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/Iris-Classification-with-SVM-and-Neural-Network",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        },
+        {
+        projectMainImage: "assets/Projects/Data/KNN-implementation/1.png",
+        projectImages: ["assets/Projects/Data/KNN-implementation/1.png", "assets/Projects/Data/KNN-implementation/2.png", "assets/Projects/Data/KNN-implementation/3.png", "assets/Projects/Data/KNN-implementation/4.png", "assets/Projects/Data/KNN-implementation/5.png", "assets/Projects/Data/KNN-implementation/6.png", "assets/Projects/Data/KNN-implementation/7.png", "assets/Projects/Data/KNN-implementation/8.png", "assets/Projects/Data/KNN-implementation/9.png"],
+        projectIcon: "",
+        projectName: "Heart-Disease-Prediction-using-KNN",
+        projectDescription: [
+          "End-to-end machine learning project implementing K-Nearest Neighbors (KNN) classifier for binary heart disease prediction.",
+          "Dataset: Patient health records including age, gender, cholesterol, blood pressure, heart rate, and other clinical features. Target: HeartDisease (0 = No Disease, 1 = Disease).",
+          "Workflow: Data preprocessing (handling missing values with SimpleImputer), StandardScaler normalization (critical for distance-based KNN), 60-20-20 train-validation-test split with stratification.",
+          "Hyperparameter tuning: Tested K values 1-30 on validation set. Optimal K = 17 achieved highest validation accuracy.",
+          "Cross-validation: 5-fold CV on training data — mean accuracy 0.8600 ± 0.0291, confirming model stability.",
+          "Test performance: Accuracy 86.0%, Precision 88.3%, Recall 88.3%, F1-Score 88.3%.",
+          "Overfitting analysis: Train accuracy 89.7% vs test 86.0% (Δ = 3.7%) — no significant overfitting detected.",
+          "Visualizations: K vs Validation Accuracy plot, confusion matrix heatmap, 2D PCA projection for exploratory analysis.",
+          "Optional analysis: PCA dimensionality reduction to 2 components achieved comparable performance, demonstrating feature redundancy.",
+        ],
+        projectPlatform: ["Code"],
+        projectType: "Code",
+        projectVersion: "1.0.0",
+        projectTech: [
+          "assets/langs/py.svg",
+          "assets/libs/scikit-learn.png"
+        ],
+        projectUrl: "",
+        projectItch: "",
+        projectGithub: "https://github.com/Quantum-Youssef-Amr/KNN-implementation",
+        projectCreateYear: "2025",
+        projectLastUpdateYear: "2025",
+        projectStatus: "complete",
+        Credits: [
+          {
+            name: "Youssef Amr",
+            role: "Solo Developer",
+            LinkInLink: "",
+            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            itchLink: ""
+          }
+        ]
+        },
+        {
+          projectMainImage: "assets/Projects/Data/Multiple-input-linear-regression-model/1.png", // Add 3D plot screenshot or regression visualization
+          projectImages: ["assets/Projects/Data/Multiple-input-linear-regression-model/1.png", "assets/Projects/Data/Multiple-input-linear-regression-model/2.png", "assets/Projects/Data/Multiple-input-linear-regression-model/3.png", "assets/Projects/Data/Multiple-input-linear-regression-model/4.png", "assets/Projects/Data/Multiple-input-linear-regression-model/5.png"],
+          projectIcon: "",
+          projectName: "Multiple-input-linear-regression-model",
+          projectDescription: [
+            "Production-ready statistical modeling tool for predictive analytics, research, and machine learning baseline comparisons.",
+            "Supports multiple input features with automated data handling — computes coefficients, intercepts, MSE, R², and statistical diagnostics.",
+            "Advanced statistical testing: ANOVA (Analysis of Variance) for model significance, hypothesis testing with p-values and t-statistics for each predictor, confidence intervals for regression coefficients.",
+            "Visualization: 3D plots for 2-feature models comparing actual vs predicted values, plus easy-to-interpret tabular outputs.",
+            "Optimized with NumPy and pandas for fast computations. Modular design for easy extension (add custom metrics, plots, etc.).",
+            "Testing & validation: Includes test scripts (`test_model.py`) with example datasets (Salary_Data.csv, taxi_trip_pricing.csv) for quick verification.",
+            "Use cases: Research/academia (social sciences, economics, bioinformatics), industry applications (sales forecasting, risk analysis, predictive maintenance), baseline model for ML pipelines.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/Pandas.png",
+            "assets/libs/NumPy.png",
+            "assets/libs/scikit-learn.png"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/Muiltple-input-linear-regression-model",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        },
+        {
+          projectMainImage: "assets/Projects/Data/simple-linear-regression-model/3.png",
+          projectImages: ["assets/Projects/Data/simple-linear-regression-model/1.png", "assets/Projects/Data/simple-linear-regression-model/2.png", "assets/Projects/Data/simple-linear-regression-model/3.png", "assets/Projects/Data/simple-linear-regression-model/4.png", "assets/Projects/Data/simple-linear-regression-model/5.png", "assets/Projects/Data/simple-linear-regression-model/6.png", "assets/Projects/Data/simple-linear-regression-model/7.png", "assets/Projects/Data/simple-linear-regression-model/8.png", "assets/Projects/Data/simple-linear-regression-model/9.png", "assets/Projects/Data/simple-linear-regression-model/10.png"],
+          projectIcon: "",
+          projectName: "Simple-Linear-Regression-Model",
+          projectDescription: [
+            "Foundational statistical modeling project implementing simple linear regression to explore relationships between variables.",
+            "Analyzes how a single independent variable predicts a dependent variable, establishing core regression concepts.",
+            "Includes evaluation metrics such as R-squared, Mean Squared Error (MSE), and coefficient significance testing.",
+            "Visualizations: scatter plots with regression lines to illustrate the linear relationship and goodness of fit.",
+            "Implemented using Python's scientific stack (pandas, NumPy, scikit-learn, matplotlib) for efficient computation and visualization.",
+            "Includes example datasets (Heart Prediction Quantum Dataset.csv, taxi_trip_pricing.csv) for experimentation and validation.",
+            "Serves as foundation for understanding more complex models like multiple linear regression and polynomial regression.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/Pandas.png",
+            "assets/libs/NumPy.png",
+            "assets/libs/scikit-learn.png"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/simple-linear-regression-model-",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        },
+        {
+          projectMainImage: "assets/Projects/Data/Study-on-LA-crimes/1.png",
+          projectImages: [ "assets/Projects/Data/Study-on-LA-crimes/1.png", "assets/Projects/Data/Study-on-LA-crimes/2.png", "assets/Projects/Data/Study-on-LA-crimes/3.png", "assets/Projects/Data/Study-on-LA-crimes/4.png", "assets/Projects/Data/Study-on-LA-crimes/5.png", "assets/Projects/Data/Study-on-LA-crimes/6.png", "assets/Projects/Data/Study-on-LA-crimes/7.png", "assets/Projects/Data/Study-on-LA-crimes/8.png", "assets/Projects/Data/Study-on-LA-crimes/9.png", "assets/Projects/Data/Study-on-LA-crimes/10.png", "assets/Projects/Data/Study-on-LA-crimes/11.png", "assets/Projects/Data/Study-on-LA-crimes/12.png"],
+          projectIcon: "",
+          projectName: "San-Francisco-Crime-Classification",
+          projectDescription: [
+            "End-to-end machine learning workflow to classify crime types using real-world data from San Francisco.",
+            "Dataset: Historical crime incident records from SF with features including crime category, datetime, location (latitude/longitude), and district.",
+            "Exploratory Data Analysis (EDA): Pandas profiling, Matplotlib/Seaborn visualizations to understand crime distributions, temporal patterns, and spatial hotspots.",
+            "Geospatial Mapping: Interactive Folium maps for crime hotspot visualization (requires internet connection for map tiles).",
+            "Feature Engineering: Extracted temporal features (hour, day, month, year) and location-based attributes (distance to landmarks, clustering assignments).",
+            "Clustering: KMeans and KMedoids for spatial crime pattern discovery — identifying high-crime clusters across the city.",
+            "Classification: Random Forest model for crime category prediction using engineered features.",
+            "Model Evaluation: Accuracy metrics and classification reports to assess predictive performance.",
+            "Requirements: Python 3.11 with NumPy 1.26.4, pandas, matplotlib, seaborn, folium, scikit-learn, and scikit-learn-extra.",
+            "Data source: San Francisco crime data sourced from Kaggle.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/Pandas.png",
+            "assets/libs/scikit-learn.png"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/Study-on-lA-crimes",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        },
+        {
+          projectMainImage: "assets/Projects/Data/War-analysis/11.png",
+          projectImages: ["assets/Projects/Data/War-analysis/1.png", "assets/Projects/Data/War-analysis/2.png","assets/Projects/Data/War-analysis/3.png","assets/Projects/Data/War-analysis/4.png","assets/Projects/Data/War-analysis/5.png","assets/Projects/Data/War-analysis/6.png","assets/Projects/Data/War-analysis/7.png","assets/Projects/Data/War-analysis/8.png","assets/Projects/Data/War-analysis/9.png","assets/Projects/Data/War-analysis/10.png","assets/Projects/Data/War-analysis/11.png","assets/Projects/Data/War-analysis/12.png","assets/Projects/Data/War-analysis/13.png"],
+          projectIcon: "",
+          projectName: "DataTools-Wars-Economic-Impact-Analysis-of-Modern-Conflicts",
+          projectDescription: [
+            "Interactive Streamlit dashboard analyzing the economic impact of major modern conflicts: Iraq War, Syrian Civil War, Ukraine Conflict, and Yemeni Civil War.",
+            "Data source: World Bank economic indicators via automated API fetching — including GDP, GDP per capita, CPI (inflation), trade balance, exports, and unemployment rates.",
+            "Analysis compares war-affected countries against global powers (USA, Russia) to contextualize economic disruption.",
+            "8 specialized visualizations: GDP trends in war-affected countries, Consumer Price Index (CPI) trends, GDP per capita change during wars, Trade balance (Russia vs USA), Export changes during conflicts, GDP per capita comparison (war vs global powers), Unemployment changes during wars, Egypt-specific economic trends.",
+            "Features: Automated data fetching and processing, comparative pre-war vs during-war period analysis, interactive tabs for each visualization type, export functionality for results and raw data.",
+            "Technical stack: Streamlit for dashboard interface, Pandas for data manipulation, Matplotlib/Seaborn for visualizations, Requests for World Bank API integration.",
+            "Purpose: Project for Data Tools and Analysis course — demonstrates end-to-end data pipeline from API to interactive insights.",
+            "Usage: Run `streamlit run app.py` — app automatically fetches, cleans, processes data, and launches interactive visualizations.",
+          ],
+          projectPlatform: ["Web", "Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/Pandas.png",
+            "assets/libs/Streamlit.png",
+          ],
+          projectUrl: "https://war-impace-analysis.streamlit.app/",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/War-impace-analysis",
+          projectCreateYear: "2025",
+          projectLastUpdateYear: "2025",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        },
+        {
+          projectMainImage: "assets/Projects/Data/SVM/1.png",
+          projectImages: ["assets/Projects/Data/SVM/1.png", "assets/Projects/Data/SVM/2.png", "assets/Projects/Data/SVM/3.png","assets/Projects/Data/SVM/4.png","assets/Projects/Data/SVM/5.png","assets/Projects/Data/SVM/6.png","assets/Projects/Data/SVM/7.png","assets/Projects/Data/SVM/8.png","assets/Projects/Data/SVM/9.png","assets/Projects/Data/SVM/10.png"],
+          projectIcon: "",
+          projectName: "US-Company-Bankruptcy-Prediction-using-SVM",
+          projectDescription: [
+            "Binary classification project predicting corporate bankruptcy using Support Vector Machines (SVM) on 20 years of financial data from NYSE and NASDAQ companies (1999-2018).",
+            "Dataset: 78,682 firm-year observations from 8,262 distinct US public companies. Features include 22 financial indicators (18 original accounting metrics + 4 derived ratios: Debt-to-Assets, ROA, Current Ratio, EBIT-to-Revenue). Target: status_label (0 = Non-bankruptcy, 1 = Bankruptcy).",
+            "Workflow: Exploratory Data Analysis (EDA) with visualizations and statistical summaries, PCA dimensionality reduction with elbow curve analysis, SVM classification with hyperparameter tuning, comprehensive model evaluation.",
+            "Technical implementation: Command-line configurable script with arguments for data path, target column, test size, and random seed. Includes reproducibility controls for research consistency.",
+            "Output files: eda_visualizations.png (distribution plots), eda_insights.txt (statistical summary), pca_elbow_curve.png (variance explained), confusion_matrix.png (prediction results), model_results.txt (metrics and parameters).",
+            "Business context: Bankruptcy defined as Chapter 11 (reorganization) or Chapter 7 (cessation of operations). The fiscal year prior to bankruptcy filing is labeled as positive class, making this a forward-looking prediction task.",
+            "Value proposition: Enables investors, creditors, and financial analysts to assess corporate default risk using publicly available accounting data.",
+            "SVM selected for its effectiveness with high-dimensional financial data and ability to find optimal separating hyperplanes in imbalanced classification scenarios.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/py.svg",
+            "assets/libs/Pandas.png",
+            "assets/libs/NumPy.png",
+            "assets/libs/scikit-learn.png"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/SVM",
+          projectCreateYear: "2026",
+          projectLastUpdateYear: "2026",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      title: 'System projects',
+      projects: [
+        {
+          projectMainImage: "", // Add screenshot of shell running commands
+          projectImages: [], // Add multiple: pipe example, redirection, background process, history
+          projectIcon: "", // Add terminal/console icon
+          projectName: "myShell - Unix Shell Implementation in C",
+          projectDescription: [
+            "Feature-complete Unix shell written in C from scratch — supports pipes, redirection, background execution, signal handling, and command history.",
+            "Core functionality: Command parsing, fork/exec process creation, foreground/background process management with PID tracking.",
+            "I/O Redirection: Input (<) and output (>) redirection using dup2() and file descriptors.",
+            "Pipes: Command chaining with | operator — full inter-process communication between multiple commands.",
+            "Built-in commands: cd (directory change), pwd (print working directory), exit, history (persistent across sessions).",
+            "Signal handling: SIGINT (Ctrl+C) kills foreground child processes only — shell remains alive (correct Unix behavior).",
+            "History persistence: Commands saved to ~/.myshell_history and loaded on startup — survives shell restarts.",
+            "Error handling: Graceful handling of command not found, file access errors, fork/pipe failures, and invalid syntax.",
+            "System calls used: fork(), execvp(), waitpid(), pipe(), dup2(), open(), close(), chdir(), getcwd(), signal(), sigaction(), kill().",
+            "Limitations (documented): No quoted argument support, no environment variable expansion, no wildcard expansion, no command substitution. Max command length 1024 chars, max pipeline 2 commands.",
+            "Compiles with GCC 4.8+ on Linux/Unix (including WSL on Windows). Includes Makefile for easy building.",
+          ],
+          projectPlatform: ["Code"],
+          projectType: "Code",
+          projectVersion: "1.0.0",
+          projectTech: [
+            "assets/langs/C.svg",
+            // Add if you have these icons: "assets/utls/linux.svg", "assets/utls/bash.svg"
+          ],
+          projectUrl: "",
+          projectItch: "",
+          projectGithub: "https://github.com/Quantum-Youssef-Amr/os-Konsole",
+          projectCreateYear: "2026",
+          projectLastUpdateYear: "2026",
+          projectStatus: "complete",
+          Credits: [
+            {
+              name: "Youssef Amr",
+              role: "Solo Developer",
+              LinkInLink: "",
+              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              itchLink: ""
+            }
+          ]
+        }
+      ]
+    }
   ];
 }

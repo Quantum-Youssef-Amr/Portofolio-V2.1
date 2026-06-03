@@ -15,7 +15,7 @@ export class BigProjectCard implements AfterContentInit {
   constructor(private router: Router){}
 
   ngAfterContentInit(): void {
-    this.ProjectLink = `/${this.Project.projectType === 'Project' ? 'projects' : 'games'}/${this.Project.projectName}`;
+    this.ProjectLink = `/${this.Project.projectType === "Game" ? 'games' : 'projects'}/${this.Project.projectName}`;
   }
 
   OnClickLink(){
