@@ -17,7 +17,13 @@ export class LandingHero implements OnInit {
 
   getOnesZeros() : string{
     let Text = "Started at 11 with Scratch. Built Energy at 14. Lost everything at 18. Delivered food on a bicycle. Co-founded a studio at 19. Built a top 7 percent GMTK game. Best friend erased my name. Left. Built 10 games, 8 compilers, an FTL paper. Founded Axiom. Ride 34 km daily. Look at the sky. Say one more day. Success is not what you have. It is what you are when you have nothing. I am what I am when I have nothing. A builder. A rider. Still building. Still riding.";
-    return this.stringToBinaryText(Text);
+
+    let m_binaryText = "";
+
+    let m_repeat = 3;
+    for (let init = 0; init < m_repeat; init++) m_binaryText += this.stringToBinaryText(Text);
+
+    return m_binaryText;
   }
 
 
