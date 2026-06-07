@@ -8,7 +8,7 @@
     <app-contacts-card></app-contacts-card>
   </div>
   @for (para of AboutPageContent; track $index) {
-    <app-paragraph class="wid90" [Title]="para.title" [paragraph]="para.paragraphs"></app-paragraph>
+    <app-paragraph class="setwid90" [Title]="para.title" [paragraph]="para.paragraphs"></app-paragraph>
   }
   <app-timeline class="wid90" [Timeline]="TimelineData"></app-timeline>
 </main>
