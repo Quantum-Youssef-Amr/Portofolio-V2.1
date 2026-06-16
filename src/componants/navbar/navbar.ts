@@ -1,4 +1,5 @@
-import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, numberAttribute, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   imports: [],
@@ -11,6 +12,18 @@ export class Navbar{
   is_scrolled = false;
   id = 0;
   el!: HTMLElement;
+  tabIndex = 0;
+  pageToIdx = [
+    "/",
+    "/about",
+    "/skills",
+    "/projects",
+    "/games",
+    "/contacts"
+  ];
+
+  constructor(private router: Router){}
+
   @HostListener('window:scroll')
   onWindowScroll(){
     this.is_scrolled = window.scrollY > 50;
@@ -45,4 +58,13 @@ export class Navbar{
       }, 3000)
   }
 
+  changeTabIndex(idx: number)
+  {
+    this.tabIndex = idx;
+    this.router.navigate([this.pageToIdx[this.tabIndex]]);
+
+    if(this.el){
+      this.el.classList.remove("open");
+    }
+  }
 }

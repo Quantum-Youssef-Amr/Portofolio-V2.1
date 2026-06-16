@@ -71,7 +71,7 @@
     }
   }
 
-  transition: opacity 0.2s ease-in;
+  transition: all 0.2s ease-out;
 
   @media (max-width: 750px){
     display: none;
@@ -122,4 +122,9 @@
       margin: 0px;
     }
   }
+}
+
+
+.link.open-tab{
+  color: var(--fevColor);
 }

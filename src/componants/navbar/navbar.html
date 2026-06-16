@@ -10,12 +10,12 @@
   </span>
   <span #links class="links" (mouseenter)="onMouseOverMenu()" (mouseleave)="onMouseOutMenu()">
     <ul>
-      <li><a class="link" href="/">Home</a></li>
-      <li><a class="link" href="/about">About</a></li>
-      <li><a class="link" href="/skills">Skills</a></li>
-      <li><a class="link" href="/projects">Projects</a></li>
-      <li><a class="link" href="/games">Games</a></li>
-      <li><a class="link" href="/contacts">Contact me</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 0" (click)="changeTabIndex(0)" >Home</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 1" (click)="changeTabIndex(1)" >About</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 2"  (click)="changeTabIndex(2)" >Skills</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 3"  (click)="changeTabIndex(3)" >Projects</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 4"  (click)="changeTabIndex(4)" >Games</a></li>
+      <li><a class="link" [class.open-tab]="tabIndex === 5"  (click)="changeTabIndex(5)" >Contact me</a></li>
     </ul>
   </span>
   <span class="Ham-menu">
