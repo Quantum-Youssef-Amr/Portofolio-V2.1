@@ -5,16 +5,11 @@
   <app-paragraph class="wid90" [Title]="`About summary`" [paragraph]="[`I'm Youssef Amr a 21 years old Game Developer, Front-end  dev  and Data scientist who loves turning wild ideas into things you can actually Play, See, and learn from.`, `I'm currently a data science student at Alexandria University, but my journey started long before that - tinkering with code, physics and the inner workings of machines. I even built a computer in a  simulator, coded in assembly, and climbed my way up to full-scale projects in Unity, Angular, Firebase, and AWS.`]"></app-paragraph>
 
   <!-- skills scrolls -->
-  <div class="wid90 horizontal-collection m2">
-    <div class="horizontal-slider">
-      <app-skill-card [Image]="`assets/game dev/Unity.svg`" [Title]="`Unity`" [progress]="9"></app-skill-card>
-      <app-skill-card [Image]="`assets/langs/py.svg`" [Title]="`PY`" [progress]="8.5"></app-skill-card>
-      <app-skill-card [Image]="`assets/Frameworks/Angular.svg`" [Title]="`Angular`" [progress]="8"></app-skill-card>
-      <app-skill-card [Image]="`assets/utls/linux.svg`" [Title]="`linux`" [progress]="9"></app-skill-card>
-      <app-skill-card [Image]="`assets/Version control/Git.svg`" [Title]="`Git`" [progress]="7.5"></app-skill-card>
-      <app-skill-card [Image]="`assets/langs/R.svg`" [Title]="`R`" [progress]="6"></app-skill-card>
-      <app-skill-card [Image]="`assets/dbs/SQLite.svg`" [Title]="`SQLite`" [progress]="8"></app-skill-card>
-      <app-skill-card [Image]="`assets/utls/docker.svg`" [Title]="`Docker`" [progress]="6.5"></app-skill-card>
+  <div class="setwid90 horizontal-collection m2">
+    <div class="horizontal-slider setwid90">
+      @for (card of skills; track $index) {
+        <app-skill-card [Image]="card.skillImage" [Title]="card.skillTitle" [gray]="true" [Note]="''" [progress]="card.skillRate"></app-skill-card>
+      }
     </div>
     <div class="gradient"></div>
     <div class="seeMore">

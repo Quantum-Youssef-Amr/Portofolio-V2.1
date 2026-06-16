@@ -24,10 +24,10 @@
           <app-btn-with-image class="btn-with-img" [Image]="`assets/Social/Itch.svg`" [link]="ProjectData.projectItch" [Title]="ProjectData.projectItch.length > 0 ? 'Play on itch' : 'Soon on itch'"> </app-btn-with-image>
         }
         @if(ProjectData.projectUrl.length > 0){
-          <a class="appCard btn" [href]="ProjectData.projectUrl"><img src="assets/Social/link.svg"></a>
+          <a class="appCard btn" [href]="ProjectData.projectUrl"><img src="assets/Social/link.svg" loading="lazy"></a>
         }
         @if(ProjectData.projectGithub.length > 0){
-          <a class="appCard btn" [href]="ProjectData.projectGithub"><img src="assets/Social/GitHub.svg"></a>
+          <a class="appCard btn" [href]="ProjectData.projectGithub"><img src="assets/Social/GitHub.svg" loading="lazy"></a>
         }
       </div>
     </div>
@@ -38,7 +38,7 @@
       <div class="two-way-gradient"></div>
       <div class="flex gap1 imgs">
         @for (img of ProjectData.projectImages; track $index) {
-          <img class="img-list-img" [src]="img" (click)="OnPreviewImageClicked($index)">
+          <img class="img-list-img" [src]="img" (click)="OnPreviewImageClicked($index)" loading="lazy">
         }
       </div>
     </div>

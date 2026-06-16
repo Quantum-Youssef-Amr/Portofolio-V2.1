@@ -7,7 +7,7 @@
 
   <div class="lang m1">
     @if(Image !== ""){
-      <img [class.gray]="gray" [src]="Image">
+      <img [class.gray]="gray" [src]="Image" alt="{{Title}}" loading="lazy"/>
     }
     <h3 class="subtitle z-inh">{{Title}}</h3>
   </div>

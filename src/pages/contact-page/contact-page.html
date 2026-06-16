@@ -1,15 +1,16 @@
 <div class="stack-container">
-  <canvas #canvas class="background-canvas"></canvas>
+  <div class="stars">
+  </div>
+  <div class="flex flex-column flex-center contactsPage gap2">
+    <img class="sun" src="assets/contact page/Sun.gif" loading="lazy"/>
+    <div class="planet-holder">
+      <img class="planet" src="/assets/contact page/Planet.gif" loading="lazy"/>
+      <img #moon class="moon" src="/assets/contact page/moon.gif" loading="lazy"/>
+    </div>
+  </div>
   <div class="gradient"></div>
   <div class="flex flex-column flex-center contactsPage gap2">
     <app-contacts-card></app-contacts-card>
     <h1 class="titleSize fevCol">Every great project starts with a single conversation — so don’t hesitate to start one.</h1>
-  </div>
-</div>
-<div #PopUp class="appCard flex gap1 pop">
-  <img src="assets/imgs/PopUp.svg" alt="achievement card img">
-  <div class="flex flex-column text">
-    <h1 class="titleSize">3 body problem</h1>
-    <h3 class="subtitle">collect every orbiting body on the background</h3>
   </div>
 </div>
