@@ -11,6 +11,9 @@ import { project } from '../../app-types.model';
 export class BigProjectCard implements AfterContentInit, AfterViewInit {
   @ViewChild("main") main!: ElementRef<HTMLDivElement>;
   @Input() Project!: project;
+  @Input() Sizing: "auto" | number = "auto";
+
+  _size : string = "15em";
   ProjectLink: string = '';
 
   constructor(private router: Router){}
@@ -23,6 +26,8 @@ export class BigProjectCard implements AfterContentInit, AfterViewInit {
       el.style.backgroundPosition = 'center';
       el.style.backgroundRepeat = 'no-repeat';
     }
+
+    this._size = this.Sizing == 'auto' ? this._size : "100dvh / 3"
   }
 
   ngAfterContentInit(): void {

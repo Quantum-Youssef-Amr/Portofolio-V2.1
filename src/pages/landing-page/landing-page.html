@@ -25,42 +25,24 @@
     </div>
   </div>
 
-  <!-- Projects TODO:ADD PROJECTS LINKS TODO: ADD ACTUAL PROJECTS-->
   <div class="wid90 m2">
-    <app-paragraph [Title]="`Projects`"></app-paragraph>
+    <app-paragraph [Title]="`Projects`" (click)="GoToProjects()" style="cursor: pointer;"></app-paragraph>
     <div class="Grid-Collection">
-      <!-- <app-small-project-card [ProjectName]="`Study on LA crime patterns`" [ProjectDescription]="`a peak about data analysis, geospatial visualization, feature engineering, and model training`" [ProjectLogos]="['assets/langs/py.svg', 'assets/dbs/MongoDB.svg']" [ProjectLink]="``"></app-small-project-card>
-      <app-small-project-card [ProjectName]="`Study on LA crime patterns`" [ProjectDescription]="`a peak about data analysis, geospatial visualization, feature engineering, and model training`" [ProjectLogos]="['assets/langs/py.svg', 'assets/dbs/MongoDB.svg']" [ProjectLink]="``"></app-small-project-card>
-      <app-small-project-card [ProjectName]="`Study on LA crime patterns`" [ProjectDescription]="`a peak about data analysis, geospatial visualization, feature engineering, and model training`" [ProjectLogos]="['assets/langs/py.svg', 'assets/dbs/MongoDB.svg']" [ProjectLink]="``"></app-small-project-card>
-      <app-small-project-card [ProjectName]="`Study on LA crime patterns`" [ProjectDescription]="`a peak about data analysis, geospatial visualization, feature engineering, and model training`" [ProjectLogos]="['assets/langs/py.svg', 'assets/dbs/MongoDB.svg']" [ProjectLink]="``"></app-small-project-card>
-      <app-small-project-card [ProjectName]="`Study on LA crime patterns`" [ProjectDescription]="`a peak about data analysis, geospatial visualization, feature engineering, and model training`" [ProjectLogos]="['assets/langs/py.svg', 'assets/dbs/MongoDB.svg']" [ProjectLink]="``"></app-small-project-card>
-      <app-small-project-card [ProjectName]="`See More`" [ProjectDescription]="``" [ProjectLogos]="[]" [ProjectLink]="`/projects`"></app-small-project-card> -->
+      @for (project of projects; track $index) {
+        <app-big-project-card [Project]="project" [Sizing]="3"></app-big-project-card>
+      }
     </div>
   </div>
 
   <!-- Games -->
 
   <div class="wid90 m2">
-    <app-paragraph [Title]="'Games'"></app-paragraph>
+    <app-paragraph [Title]="'Games'" (click)="GoToGames()" style="cursor: pointer;"></app-paragraph>
     <div class="horizontal-collection">
-      <div class="horizontal-slider">
-          <!-- <app-big-project-card [ProjectType]="'Game'" [ProjectImage]="`assets/Projects/Infected/Infected.png`" [ProjectName]="`Infected`" [ProjectDescription]="` is a 2D tower defense game set in a collapsing computer system overrun by viruses. Strategize, adapt, and survive as enemies evolve with every choice you make. Balance combat, resource management, and survival in a world on the brink of collapse.`"></app-big-project-card>
-          <app-big-project-card [ProjectType]="'Game'" [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
-          <app-big-project-card [ProjectType]="'Game'" [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
-          <app-big-project-card [ProjectType]="'Game'" [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card>
-          <app-big-project-card [ProjectType]="'Game'" [ProjectImage]="`assets/Projects/Climb/climb.png`" [ProjectName]="`Climb`" [ProjectDescription]="` is a fast-paced arcade game where you play as a bouncing ball escaping rising lava. Jump higher, dodge deadly saw blades, and survive as long as you can. Every second counts—how high can you climb before the heat catches you?`"></app-big-project-card> -->
-      </div>
-      <div class="gradient"></div>
-      <div class="seeMore">
-        <a href="/games" class="p1">
-          See more
-          <svg viewBox="0 0 35.356 35.356" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
-            <g transform="matrix(0.707 -0.707 0.707 0.707 -0 17.678)">
-            <rect width="25" height="5"  fill-rule="evenodd" transform="matrix(1 0 0 1 0 20)" />
-            <path d="M0 0L25 -3.8147e-06L25 5L0 5.00001L0 0Z"  fill-rule="evenodd" transform="matrix(-0 -1 1 -0 20 25)" />
-            </g>
-          </svg>
-        </a>
+      <div class="Grid-Collection">
+        @for (game of games; track $index) {
+          <app-big-project-card [Project]="game" [Sizing]="3"></app-big-project-card>
+        }
       </div>
     </div>
   </div>
