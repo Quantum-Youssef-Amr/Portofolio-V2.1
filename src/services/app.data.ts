@@ -533,7 +533,7 @@ AboutPageContent: Array<aboutPar> = [
         projectIcon: 'assets/Projects/Game Dev/10-sec-hero/icon.png',
         projectName: '10 Sec Hero',
         projectDescription: ['We all know that triangles is the bestagon, so in this game you are one. trying to defend your door way to escape this levels. killing evils shapes and gain time to escape', 'this project was created in the 2026 GMTK game jam (Theme: COUNT DOWN), as a solo project.', 'This project was such a joy to create and I truly enjoyed making it after a year working on my big projects.', 'try it, enjoy, and don\'t hastate to reach out with feedback or a suggestion.'],
-        projectPlatform: ['PC', 'Mobile'],
+        projectPlatform: ['PC', 'Web'],
         projectType: 'Game',
         projectVersion: '0.1.14 JAM',
         projectTech: ['assets/game dev/Unity.svg', 'assets/langs/CSharp.svg'],
