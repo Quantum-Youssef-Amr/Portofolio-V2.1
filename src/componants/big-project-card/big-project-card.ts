@@ -26,7 +26,8 @@ export class BigProjectCard implements AfterContentInit, AfterViewInit {
   }
 
   ngAfterContentInit(): void {
-    this.ProjectLink = `/${this.Project.projectType === "Game" ? 'games' : 'projects'}/${this.Project.projectName}`;
+    let m_projectToURLName = this.Project.projectName.toLowerCase().split(" ").join("-");
+    this.ProjectLink = `/${this.Project.projectType === "Game" ? 'games' : 'projects'}/${m_projectToURLName}`;
   }
 
   OnClickLink(){

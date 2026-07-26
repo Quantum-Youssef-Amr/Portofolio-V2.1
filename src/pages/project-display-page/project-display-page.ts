@@ -48,7 +48,7 @@ export class ProjectDisplayPage implements OnInit, AfterViewInit{
   }
 
   ngOnInit(): void {
-    let m_projectNameFromUrl = this.router.url.split('/').at(-1) ?? "";
+    let m_projectNameFromUrl = this.router.url.split('/').at(-1)?.split("-").join(" ") ?? "";
     let m_projectTypeFromUrl = this.router.url.split('/').at(-2) ?? "";
 
 
@@ -82,7 +82,8 @@ export class ProjectDisplayPage implements OnInit, AfterViewInit{
   }
 
   OnPreviewImageClicked(idx: number){
-    this.PreviewImage.style.backgroundImage = `url(/${this.ProjectData.projectImages[idx]})`;
+    this.PreviewImage.style.backgroundImage = `url('/${this.ProjectData.projectImages[idx]}')`;
+    console.log(`url(/${this.ProjectData.projectImages[idx]})`)
     this.PreviewImageBox.classList.add('showPreview');
   }
 

@@ -8,7 +8,7 @@ import { aboutPar, PersonalLinks, project, projectSection, skillPar, timelineNod
 export class AppData {
   App_Personal_links: PersonalLinks = {
     githubLink: 'https://github.com/Quantum-Youssef-Amr',
-    itchLink: 'https://youssef-amr0.itch.io/',
+    itchLink: 'https://youssef-amr-thesolodev.itch.io/',
     linkedInLink: 'https://www.linkedin.com/in/youssef-amr-2ba9962b5',
     email: 'amry14003@gmail.com'
   };
@@ -352,6 +352,204 @@ AboutPageContent: Array<aboutPar> = [
             itchLink: ''
           }
         ]
+      },
+      {
+        projectMainImage: 'assets/Projects/Game Dev/Astro/1.png',
+        projectImages: ['assets/Projects/Game Dev/Astro/1.png', 'assets/Projects/Game Dev/Astro/2.png','assets/Projects/Game Dev/Astro/3.png', 'assets/Projects/Game Dev/Astro/4.png', 'assets/Projects/Game Dev/Astro/5.png', 'assets/Projects/Game Dev/Astro/6.png', 'assets/Projects/Game Dev/Astro/7.png', 'assets/Projects/Game Dev/Astro/8.png', 'assets/Projects/Game Dev/Astro/9.png', 'assets/Projects/Game Dev/Astro/10.png'],
+        projectIcon: 'assets/Projects/Game Dev/Astro/icon.png',
+        projectName: 'Astro',
+        projectDescription: ['A classic arcade space shooter. Dodge asteroids, collect power-ups, and survive as long as you can', 'Pilot your ship through deep space. Asteroids are coming — fast, relentless, and in waves. Your mission: destroy them before they destroy you.', "Astro is a classic arcade space shooter where you pilot a ship through an endless asteroid field. Your goal is simple: survive as long as possible by shooting and dodging incoming asteroids while collecting power-ups to boost your firepower and speed. It's fast, addictive, and built for quick play sessions — no story, no cutscenes, just pure arcade action."],
+        projectPlatform: ['PC', 'Mobile'],
+        projectType: 'Game',
+        projectVersion: '0.1.5 alpha',
+        projectTech: [
+          'assets/game dev/Unity.svg',
+          'assets/langs/CSharp.svg'],
+        projectUrl: '',
+        projectItch: 'https://youssef-amr-thesolodev.itch.io/astro',
+        projectGithub: 'https://github.com/Quantum-Youssef-Amr/Astro',
+        projectCreateYear: '2026',
+        projectLastUpdateYear: '2026',
+        projectStatus: 'complete',
+        Credits: [{
+          name: 'Youssef Amr',
+          role: 'Made every thing',
+          LinkInLink: '',
+          GithubLink: '',
+          itchLink: ''
+        }]
+      },
+      {
+        projectMainImage: 'assets/Projects/Game Dev/one-more-day/1.png',
+        projectImages: ['assets/Projects/Game Dev/one-more-day/1.png', 'assets/Projects/Game Dev/one-more-day/2.png', 'assets/Projects/Game Dev/one-more-day/3.png', 'assets/Projects/Game Dev/one-more-day/4.png', 'assets/Projects/Game Dev/one-more-day/5.png', 'assets/Projects/Game Dev/one-more-day/6.png', 'assets/Projects/Game Dev/one-more-day/7.png', 'assets/Projects/Game Dev/one-more-day/8.png', 'assets/Projects/Game Dev/one-more-day/9.png', 'assets/Projects/Game Dev/one-more-day/10.png', 'assets/Projects/Game Dev/one-more-day/11.png'],
+        projectIcon: 'assets/Projects/Game Dev/one-more-day/icon.png',
+        projectName: 'One More Day',
+        projectDescription: ['One More Day is a short, narrative-driven experience set in the tense, emotional atmosphere of a modern hospital.', 'Developed for GMTK Game Jam 2025 (Theme: Loop), it offers a compact yet impactful story that combines exploration, high-pressure medical scenarios, and character-driven storytelling.', 'You play as Dr. Zain, a young doctor whose day begins like any other. As you move through the hospital, you’ll encounter familiar routines, brief conversations with staff, and the steady rhythm of a place that never sleeps. But when a sudden, critical emergency unfolds, that calm is shattered, and you are thrust into a race against time where every second counts.', 'The game immerses you in both the professional and personal weight of being in Zain’s shoes. From quiet moments in hospital corridors to the tension of urgent decisions, one-more-day is about more than just quick reactions—it’s about responsibility, persistence, and what we are willing to risk for those we care about.', 'This game was brought to life by a passionate and talented team at Orpita community, alongside amazing external contributors who volunteered their skills during GMTK 2025.', "Note: Game Code is currently unavailable due to some misunderstanding with the copyright law on the side of Orpita community, the matter will be solved shortly and the code will be public again."],
+        projectPlatform: ['PC'],
+        projectType: 'Game',
+        projectVersion: '2.0.1',
+        projectTech: [
+          'assets/game dev/Unity.svg',
+          'assets/langs/CSharp.svg'
+        ],
+        projectUrl: '',
+        projectItch: 'https://orpita-community.itch.io/one-more-day',
+        projectGithub: 'https://github.com/Quantum-Youssef-Amr/one-more-day',
+        projectCreateYear: '2025',
+        projectLastUpdateYear: '2026',
+        projectStatus: 'complete',
+        Credits: [
+          {
+            name: 'Amr Elmahdy',
+            role: 'co-founder, CEO',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Youssef Amr',
+            role: 'co-founder, former CTO',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Youssef Soliman',
+            role: 'Game Design',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Nourhan Amr',
+            role: 'Game Design',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Mariam Motaz',
+            role: 'Game Design',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Amira Emad',
+            role: 'Game Design',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Fatima Nadder',
+            role: 'Game Design',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Youssef Amr',
+            role: 'Head Game Dev',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Mark Asaad',
+            role: 'Game Developer',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Mahmoud',
+            role: 'Game Developer',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Fares Khaled',
+            role: 'Game Developer',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Sherifa Sayed',
+            role: 'Game Developer',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Esraa',
+            role: 'Head Game Artist',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Chase (Gobstopper)',
+            role: 'Game Artist',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Kino',
+            role: 'Game Artist',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Amr Elkhelawy',
+            role: 'Music & SFX Creator',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Josif ali (jomoa)',
+            role: 'Music & SFX Creator',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          },
+          {
+            name: 'Alex',
+            role: 'Music and SFX Creator',
+            LinkInLink: '',
+            GithubLink: '',
+            itchLink: ''
+          }
+        ]
+      }
+      ,{
+        projectMainImage: 'assets/Projects/Game Dev/10-sec-hero/1.png',
+        projectImages: ['assets/Projects/Game Dev/10-sec-hero/1.png', 'assets/Projects/Game Dev/10-sec-hero/2.png', 'assets/Projects/Game Dev/10-sec-hero/3.png', 'assets/Projects/Game Dev/10-sec-hero/4.png'],
+        projectIcon: 'assets/Projects/Game Dev/10-sec-hero/icon.png',
+        projectName: '10 Sec Hero',
+        projectDescription: ['We all know that triangles is the bestagon, so in this game you are one. trying to defend your door way to escape this levels. killing evils shapes and gain time to escape', 'this project was created in the 2026 GMTK game jam (Theme: COUNT DOWN), as a solo project.', 'This project was such a joy to create and I truly enjoyed making it after a year working on my big projects.', 'try it, enjoy, and don\'t hastate to reach out with feedback or a suggestion.'],
+        projectPlatform: ['PC', 'Mobile'],
+        projectType: 'Game',
+        projectVersion: '0.1.14 JAM',
+        projectTech: ['assets/game dev/Unity.svg', 'assets/langs/CSharp.svg'],
+        projectUrl: '',
+        projectItch: 'https://youssef-amr-thesolodev.itch.io/10-sec-hero',
+        projectGithub: 'https://github.com/Quantum-Youssef-Amr/GMTK-GAME-JAM-2026',
+        projectCreateYear: '7-22-2026',
+        projectLastUpdateYear: '7-26-2026',
+        projectStatus: "complete",
+        Credits: [{
+          name: 'Youssef Amr',
+          role: 'Designer - Artist - programmer',
+          LinkInLink: '',
+          GithubLink: '',
+          itchLink: ''
+        }]
       }
     ]
   }

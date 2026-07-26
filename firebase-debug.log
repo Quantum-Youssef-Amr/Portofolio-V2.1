@@ -1,0 +1,95 @@
+[debug] [2026-06-21T00:11:55.327Z] ----------------------------------------------------------------------
+[debug] [2026-06-21T00:11:55.332Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-06-21T00:11:55.332Z] CLI Version:   15.20.0
+[debug] [2026-06-21T00:11:55.333Z] Platform:      win32
+[debug] [2026-06-21T00:11:55.333Z] Node Version:  v24.14.0
+[debug] [2026-06-21T00:11:55.333Z] Time:          Sun Jun 21 2026 03:11:55 GMT+0300 (Eastern European Summer Time)
+[debug] [2026-06-21T00:11:55.333Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-06-21T00:11:58.706Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-06-21T00:11:58.706Z] > authorizing via signed-in user (amry14003@gmail.com)
+[debug] [2026-06-21T00:11:58.707Z] [iam] checking project youssefamr-thesolodev for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-06-21T00:11:58.709Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:11:58.709Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:11:58.711Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/youssefamr-thesolodev:testIamPermissions [none]
+[debug] [2026-06-21T00:11:58.711Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/youssefamr-thesolodev:testIamPermissions  x-goog-user-project=youssefamr-thesolodev
+[debug] [2026-06-21T00:11:58.711Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youssefamr-thesolodev:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-06-21T00:12:00.279Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/youssefamr-thesolodev:testIamPermissions 200
+[debug] [2026-06-21T00:12:00.279Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/youssefamr-thesolodev:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-06-21T00:12:00.280Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:00.280Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:00.281Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/youssefamr-thesolodev [none]
+[debug] [2026-06-21T00:12:01.074Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/youssefamr-thesolodev 200
+[debug] [2026-06-21T00:12:01.074Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/youssefamr-thesolodev {"projectId":"youssefamr-thesolodev","projectNumber":"53050233179","displayName":"youssefamr-thesolodev","name":"projects/youssefamr-thesolodev","resources":{"hostingSite":"youssefamr-thesolodev"},"state":"ACTIVE","etag":"1_e7a63b6c-e7a9-4744-84ef-5523e82ce3d8"}
+[info] 
+[info] === Deploying to 'youssefamr-thesolodev'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-06-21T00:12:01.083Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:01.083Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:01.083Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/youssefamr-thesolodev/sites/youssefamr-thesolodev [none]
+[debug] [2026-06-21T00:12:02.917Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/youssefamr-thesolodev/sites/youssefamr-thesolodev 200
+[debug] [2026-06-21T00:12:02.917Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/youssefamr-thesolodev/sites/youssefamr-thesolodev {"name":"projects/youssefamr-thesolodev/sites/youssefamr-thesolodev","defaultUrl":"https://youssefamr-thesolodev.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-06-21T00:12:02.919Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:02.919Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:02.920Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions [none]
+[debug] [2026-06-21T00:12:02.920Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-06-21T00:12:05.059Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions 200
+[debug] [2026-06-21T00:12:05.059Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions {"name":"projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[youssefamr-thesolodev]: beginning deploy... 
+[info] i  hosting[youssefamr-thesolodev]: found 1 files in browser 
+[debug] [2026-06-21T00:12:05.080Z] [hosting] uploading with 200 concurrency
+[debug] [2026-06-21T00:12:05.081Z] [hosting] hash cache [YnJvd3Nlcg] not populated
+[debug] [2026-06-21T00:12:05.090Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:05.090Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:05.103Z] [hosting] hash cache [YnJvd3Nlcg] stored for 1 files
+[debug] [2026-06-21T00:12:05.104Z] [hosting][hash queue][FINAL] {"max":6,"min":6,"avg":6,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":21}
+[debug] [2026-06-21T00:12:05.104Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78:populateFiles [none]
+[debug] [2026-06-21T00:12:05.104Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78:populateFiles {"files":{"/index.html":"8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414"}}
+[debug] [2026-06-21T00:12:06.220Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78:populateFiles 200
+[debug] [2026-06-21T00:12:06.220Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78:populateFiles {"uploadRequiredHashes":["8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78/files"}
+[debug] [2026-06-21T00:12:06.221Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:06.221Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:06.221Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78/files/8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414 [none]
+[debug] [2026-06-21T00:12:06.221Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78/files/8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414 [stream]
+[debug] [2026-06-21T00:12:06.223Z] [hosting][populate queue][FINAL] {"max":1131,"min":1131,"avg":1131,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1133}
+[debug] [2026-06-21T00:12:06.224Z] [hosting] uploads queued: 1
+[debug] [2026-06-21T00:12:07.446Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78/files/8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414 200
+[debug] [2026-06-21T00:12:07.446Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78/files/8e85fd2ef1ba5610dc2933c5aaadf38c9ede367d0c519e1fc13b57d0a0f31414 [stream]
+[debug] [2026-06-21T00:12:07.446Z] [hosting][upload queue][FINAL] {"max":1226,"min":1226,"avg":1226,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1226}
+[info] +  hosting[youssefamr-thesolodev]: file upload complete 
+[debug] [2026-06-21T00:12:07.448Z] [hosting] deploy completed after 2384ms
+[debug] [2026-06-21T00:12:07.449Z] [
+  {
+    "config": {
+      "public": "browser",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "youssefamr-thesolodev"
+    },
+    "version": "projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78"
+  }
+]
+[info] i  hosting[youssefamr-thesolodev]: finalizing version... 
+[debug] [2026-06-21T00:12:07.454Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:07.454Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:07.454Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78 updateMask=status%2Cconfig
+[debug] [2026-06-21T00:12:07.454Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-06-21T00:12:09.471Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78 200
+[debug] [2026-06-21T00:12:09.471Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78 {"name":"projects/53050233179/sites/youssefamr-thesolodev/versions/d18df2e692ae9c78","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-06-21T00:12:03.675453Z","createUser":{"email":"amry14003@gmail.com"},"finalizeTime":"2026-06-21T00:12:09.017388Z","finalizeUser":{"email":"amry14003@gmail.com"}}
+[debug] [2026-06-21T00:12:09.472Z] [hosting] finalized version for youssefamr-thesolodev:[object Object]
+[info] +  hosting[youssefamr-thesolodev]: version finalized 
+[info] i  hosting[youssefamr-thesolodev]: releasing new version... 
+[debug] [2026-06-21T00:12:09.474Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:09.474Z] Checked if tokens are valid: true, expires at: 1782004249839
+[debug] [2026-06-21T00:12:09.474Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/channels/live/releases versionName=projects%2F53050233179%2Fsites%2Fyoussefamr-thesolodev%2Fversions%2Fd18df2e692ae9c78
+[debug] [2026-06-21T00:12:09.474Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/youssefamr-thesolodev/channels/live/releases {}
