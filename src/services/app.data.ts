@@ -373,7 +373,7 @@ AboutPageContent: Array<aboutPar> = [
         projectStatus: 'complete',
         Credits: [{
           name: 'Youssef Amr',
-          role: 'Made every thing',
+          role: 'Designer - Artist - programmer',
           LinkInLink: '',
           GithubLink: '',
           itchLink: ''
@@ -395,8 +395,8 @@ AboutPageContent: Array<aboutPar> = [
         projectUrl: '',
         projectItch: 'https://orpita-community.itch.io/one-more-day',
         projectGithub: 'https://github.com/Quantum-Youssef-Amr/one-more-day',
-        projectCreateYear: '2025',
-        projectLastUpdateYear: '2026',
+        projectCreateYear: '8-30-2025',
+        projectLastUpdateYear: '9-2-2025',
         projectStatus: 'complete',
         Credits: [
           {
