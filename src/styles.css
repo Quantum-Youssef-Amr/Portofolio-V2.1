@@ -10,7 +10,9 @@
 
   font-family:Bahnschrift ,system-ui, -apple-system, 'Open Sans';
   color: #fff;
+
   user-select: none;
+  box-sizing: border-box;
 }
 
 body{
@@ -281,7 +283,11 @@ body{
 
 .Grid-Collection{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, calc((100% / 4) - 3em));
   grid-template-rows: auto;
-  gap: 4em;
+  gap: 3em;
+}
+
+.grid3{
+  grid-template-columns: repeat(3, calc((100% / 3) - 3em)) !important;
 }

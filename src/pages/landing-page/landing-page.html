@@ -1,14 +1,17 @@
-<main>
+<main>\
+  <!-- hero -->
   <app-landing-hero></app-landing-hero>
 
   <!-- about summary -->
-  <app-paragraph class="wid90" [Title]="`About summary`" [paragraph]="[`I'm Youssef Amr a 21 years old Game Developer, Front-end  dev  and Data scientist who loves turning wild ideas into things you can actually Play, See, and learn from.`, `I'm currently a data science student at Alexandria University, but my journey started long before that - tinkering with code, physics and the inner workings of machines. I even built a computer in a  simulator, coded in assembly, and climbed my way up to full-scale projects in Unity, Angular, Firebase, and AWS.`]"></app-paragraph>
+  <app-paragraph class="wid90" [Title]="`About summary`"
+    [paragraph]="[`I'm Youssef Amr a 21 years old Game Developer, Front-end  dev  and Data scientist who loves turning wild ideas into things you can actually Play, See, and learn from.`, `I'm currently a data science student at Alexandria University, but my journey started long before that - tinkering with code, physics and the inner workings of machines. I even built a computer in a  simulator, coded in assembly, and climbed my way up to full-scale projects in Unity, Angular, Firebase, and AWS.`]"></app-paragraph>
 
   <!-- skills scrolls -->
   <div class="setwid90 horizontal-collection m2">
     <div class="horizontal-slider setwid90">
       @for (card of skills; track $index) {
-        <app-skill-card [Image]="card.skillImage" [Title]="card.skillTitle" [gray]="true" [Note]="''" [progress]="card.skillRate"></app-skill-card>
+      <app-skill-card [Image]="card.skillImage" [Title]="card.skillTitle" [gray]="true" [Note]="''"
+        [progress]="card.skillRate"></app-skill-card>
       }
     </div>
     <div class="gradient"></div>
@@ -17,44 +20,52 @@
         See more
         <svg viewBox="0 0 35.356 35.356" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
           <g transform="matrix(0.707 -0.707 0.707 0.707 -0 17.678)">
-          <rect width="25" height="5"  fill-rule="evenodd" transform="matrix(1 0 0 1 0 20)" />
-          <path d="M0 0L25 -3.8147e-06L25 5L0 5.00001L0 0Z"  fill-rule="evenodd" transform="matrix(-0 -1 1 -0 20 25)" />
+            <rect width="25" height="5" fill-rule="evenodd" transform="matrix(1 0 0 1 0 20)" />
+            <path d="M0 0L25 -3.8147e-06L25 5L0 5.00001L0 0Z" fill-rule="evenodd"
+              transform="matrix(-0 -1 1 -0 20 25)" />
           </g>
         </svg>
       </a>
     </div>
   </div>
 
-  <div class="wid90 m2">
+  <!-- Projects -->
+
+  <div class="setwid90 m2">
     <app-paragraph [Title]="`Projects`" (click)="GoToProjects()" style="cursor: pointer;"></app-paragraph>
-    <div class="Grid-Collection">
+    <div class="Grid-Collection setwid90">
       @for (project of projects; track $index) {
-        <app-big-project-card [Project]="project" [Sizing]="3"></app-big-project-card>
+      <app-big-project-card [Project]="project" [Sizing]="4"></app-big-project-card>
       }
     </div>
   </div>
 
   <!-- Games -->
 
-  <div class="wid90 m2">
+  <div class="wid90 m2 setwid90">
     <app-paragraph [Title]="'Games'" (click)="GoToGames()" style="cursor: pointer;"></app-paragraph>
     <div class="horizontal-collection">
-      <div class="Grid-Collection">
+      <div class="Grid-Collection setwid90">
         @for (game of games; track $index) {
-          <app-big-project-card [Project]="game" [Sizing]="3"></app-big-project-card>
+        <app-big-project-card [Project]="game" [Sizing]="3"></app-big-project-card>
         }
       </div>
     </div>
   </div>
 
   <!-- contact me -->
-   <div class="wid90">
-     <app-paragraph class="wid90" [Title]="`Contact me`" [paragraph]="['I’m always open to new opportunities collaborations, or even a good chat about technology, game development, and data science. Whether you’ve got a wild idea, a challenging project, or just want to talk about how to make things smarter (or more fun) — I’d love to hear  from you.']"></app-paragraph>
-    <div class="Grid-Collection">
-      <app-btn-with-image [Title]="`GitHub`" [Image]="`assets/Social/GitHub.svg`" [link]="links.githubLink"></app-btn-with-image>
-      <app-btn-with-image [Title]="`LinkedIn`" [Image]="`assets/Social/LinkedIn.svg`" [link]="links.linkedInLink"></app-btn-with-image>
-      <app-btn-with-image [Title]="`Mail me`" [Image]="`assets/Social/Mail.svg`" [link]="`mailto:${links.email}`"></app-btn-with-image>
+  <div class="wid90">
+    <app-paragraph class="wid90" [Title]="`Contact me`"
+      [paragraph]="['I’m always open to new opportunities collaborations, or even a good chat about technology, game development, and data science. Whether you’ve got a wild idea, a challenging project, or just want to talk about how to make things smarter (or more fun) — I’d love to hear  from you.']"></app-paragraph>
+    <div class="Grid-Collection grid3">
+      <app-btn-with-image [Title]="`GitHub`" [Image]="`assets/Social/GitHub.svg`"
+        [link]="links.githubLink"></app-btn-with-image>
+      <app-btn-with-image [Title]="`LinkedIn`" [Image]="`assets/Social/LinkedIn.svg`"
+        [link]="links.linkedInLink"></app-btn-with-image>
+      <app-btn-with-image [Title]="`Mail me`" [Image]="`assets/Social/Mail.svg`"
+        [link]="`mailto:${links.email}`"></app-btn-with-image>
     </div>
-    <app-paragraph class="fevCol centered" [paragraph]="[`Every great project starts with a single conversation — so don’t hesitate to start one.`]"></app-paragraph>
-   </div>
+    <app-paragraph class="fevCol centered"
+      [paragraph]="[`Every great project starts with a single conversation — so don’t hesitate to start one.`]"></app-paragraph>
+  </div>
 </main>

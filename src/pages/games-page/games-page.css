@@ -26,6 +26,12 @@
 
 }
 
+.projects{
+  *{
+    width: 20em;
+  }
+}
+
 @media (max-width: 750px){
   .projects > *{
     width: 90% !important;

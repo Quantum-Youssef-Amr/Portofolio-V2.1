@@ -7,10 +7,10 @@ import { aboutPar, PersonalLinks, project, projectSection, skillPar, timelineNod
 
 export class AppData {
   App_Personal_links: PersonalLinks = {
-    githubLink: 'https://github.com/Quantum-Youssef-Amr',
-    itchLink: 'https://youssef-amr-thesolodev.itch.io/',
+    githubLink: 'https://github.com/Youssef-amr-TheSoloDev',
+    itchLink: 'https://Youssef-amr-TheSoloDev.itch.io/',
     linkedInLink: 'https://www.linkedin.com/in/youssef-amr-2ba9962b5',
-    email: 'amry14003@gmail.com'
+    email: 'youssefamr.thesolodev@gmail.com'
   };
 
 AboutPageContent: Array<aboutPar> = [
@@ -249,7 +249,7 @@ AboutPageContent: Array<aboutPar> = [
             skillImage: "assets/game dev/Pixelorama.png",
             skillTitle: "Pixelorama",
             skillRate: 7.75,
-            skillNote: "Pixel art for Starfish game and 2-bit retro aesthetic in Infected (tower defense)."
+            skillNote: "Pixel art for 2-bit retro aesthetic in Infected (tower defense)."
           },
           {
             skillImage: "assets/game dev/Blender.svg",
@@ -290,7 +290,7 @@ AboutPageContent: Array<aboutPar> = [
             skillImage: "assets/dbs/postgresql.svg",
             skillTitle: "Postgresql",
             skillRate: 9,
-            skillNote: "Primary relational DB. Used in DrWisee (ministry-funded medical project)."
+            skillNote: "Primary relational DB, and my beloved way to make databases."
           },
           {
             skillImage: "assets/dbs/MongoDB.svg",
@@ -313,7 +313,7 @@ AboutPageContent: Array<aboutPar> = [
             skillImage: "assets/Version control/GitHub.svg",
             skillTitle: "GitHub",
             skillRate: 9,
-            skillNote: "Full repo history proving ownership of 10+ games and 8 compilers."
+            skillNote: "Full repo history"
           }
         ]
       }
@@ -366,8 +366,8 @@ AboutPageContent: Array<aboutPar> = [
           'assets/game dev/Unity.svg',
           'assets/langs/CSharp.svg'],
         projectUrl: '',
-        projectItch: 'https://youssef-amr-thesolodev.itch.io/astro',
-        projectGithub: 'https://github.com/Quantum-Youssef-Amr/Astro',
+        projectItch: 'https://Youssef-amr-TheSoloDev.itch.io/astro',
+        projectGithub: 'https://github.com/Youssef-amr-TheSoloDev/Astro',
         projectCreateYear: '2026',
         projectLastUpdateYear: '2026',
         projectStatus: 'complete',
@@ -394,7 +394,7 @@ AboutPageContent: Array<aboutPar> = [
         ],
         projectUrl: '',
         projectItch: 'https://orpita-community.itch.io/one-more-day',
-        projectGithub: 'https://github.com/Quantum-Youssef-Amr/one-more-day',
+        projectGithub: 'https://github.com/Youssef-amr-TheSoloDev/one-more-day',
         projectCreateYear: '8-30-2025',
         projectLastUpdateYear: '9-2-2025',
         projectStatus: 'complete',
@@ -538,8 +538,8 @@ AboutPageContent: Array<aboutPar> = [
         projectVersion: '0.1.14 JAM',
         projectTech: ['assets/game dev/Unity.svg', 'assets/langs/CSharp.svg'],
         projectUrl: '',
-        projectItch: 'https://youssef-amr-thesolodev.itch.io/10-sec-hero',
-        projectGithub: 'https://github.com/Quantum-Youssef-Amr/GMTK-GAME-JAM-2026',
+        projectItch: 'https://Youssef-amr-TheSoloDev.itch.io/10-sec-hero',
+        projectGithub: 'https://github.com/Youssef-amr-TheSoloDev/GMTK-GAME-JAM-2026',
         projectCreateYear: '7-22-2026',
         projectLastUpdateYear: '7-26-2026',
         projectStatus: "complete",
@@ -583,9 +583,9 @@ AboutPageContent: Array<aboutPar> = [
             "assets/langs/CSS.svg",
             "assets/langs/JS.svg"
           ],
-          projectUrl: "https://quantum-youssef-amr.github.io/PlantPal-webdevCourse/",
+          projectUrl: "https://Youssef-amr-TheSoloDev.github.io/PlantPal-webdevCourse/",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/PlantPal-webdevCourse",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/PlantPal-webdevCourse",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -594,7 +594,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Solo Developer",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           }
         ]
@@ -619,9 +619,9 @@ AboutPageContent: Array<aboutPar> = [
           "assets/langs/CSS.svg",
           "assets/langs/JS.svg"
         ],
-        projectUrl: "https://quantum-youssef-amr.github.io/going-angular-course-project-1/",
+        projectUrl: "https://Youssef-amr-TheSoloDev.github.io/going-angular-course-project-1/",
         projectItch: "",
-        projectGithub: "https://github.com/Quantum-Youssef-Amr/going-angular-course-project-1",
+        projectGithub: "https://github.com/Youssef-amr-TheSoloDev/going-angular-course-project-1",
         projectCreateYear: "2025", // Adjust based on actual course date
         projectLastUpdateYear: "2025",
         projectStatus: "complete",
@@ -630,7 +630,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Solo Developer",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           }
         ]
@@ -658,7 +658,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/TaskFlow2nd",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/TaskFlow2nd",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2026",
           projectStatus: "complete",
@@ -667,7 +667,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "frontend engineer",
               LinkInLink: "https://www.linkedin.com/in/youssef-amr-2ba9962b5",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
             ,
@@ -684,7 +684,7 @@ AboutPageContent: Array<aboutPar> = [
         projectMainImage: "assets/Projects/front-end/To-do/1.png",
         projectImages: ["assets/Projects/front-end/To-do/1.png", "assets/Projects/front-end/To-do/2.png", "assets/Projects/front-end/To-do/3.png"],
         projectIcon: "",
-        projectName: "To-Do",
+        projectName: "To Do",
         projectDescription: [
           "Simple login and todo list application — built to learn JavaScript fundamentals before Angular.",
           "Part of university web course: authentication flow, DOM manipulation, and client-side state management.",
@@ -701,9 +701,9 @@ AboutPageContent: Array<aboutPar> = [
           "assets/langs/CSS.svg",
           "assets/langs/JS.svg"
         ],
-        projectUrl: "https://quantum-youssef-amr.github.io/To-Do-app/",
+        projectUrl: "https://Youssef-amr-TheSoloDev.github.io/To-Do-app/",
         projectItch: "",
-        projectGithub: "https://github.com/Quantum-Youssef-Amr/To-Do-app",
+        projectGithub: "https://github.com/Youssef-amr-TheSoloDev/To-Do-app",
         projectCreateYear: "2025",
         projectLastUpdateYear: "2025",
         projectStatus: "complete",
@@ -712,7 +712,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Solo Developer",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           }
         ]
@@ -721,7 +721,7 @@ AboutPageContent: Array<aboutPar> = [
         projectMainImage: "assets/Projects/front-end/Weather-wizard/1.png",
         projectImages: ["assets/Projects/front-end/Weather-wizard/1.png", "assets/Projects/front-end/Weather-wizard/2.png","assets/Projects/front-end/Weather-wizard/3.png","assets/Projects/front-end/Weather-wizard/4.png","assets/Projects/front-end/Weather-wizard/5.png"],
         projectIcon: "assets/Projects/front-end/Weather-wizard/icon.svg",
-        projectName: "Weather-Wizard",
+        projectName: "Weather Wizard",
         projectDescription: [
           "Final Angular course project — placed 3rd out of 150 students learning Angular.",
           "Interactive weather dashboard using OpenWeather API for real-time global weather data.",
@@ -742,7 +742,7 @@ AboutPageContent: Array<aboutPar> = [
         ],
         projectUrl: "https://weather-wizard-ddc20.web.app/",
         projectItch: "",
-        projectGithub: "https://github.com/Quantum-Youssef-Amr/final-angular-course-project",
+        projectGithub: "https://github.com/Youssef-amr-TheSoloDev/final-angular-course-project",
         projectCreateYear: "2025",
         projectLastUpdateYear: "2025",
         projectStatus: "complete",
@@ -751,7 +751,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Project Manager, frontend lead",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           },
           {
@@ -774,7 +774,7 @@ AboutPageContent: Array<aboutPar> = [
         projectMainImage: "assets/Projects/front-end/old-portfolio/1.png",
         projectImages: ["assets/Projects/front-end/old-portfolio/1.png", "assets/Projects/front-end/old-portfolio/2.png", "assets/Projects/front-end/old-portfolio/3.png", "assets/Projects/front-end/old-portfolio/4.png", "assets/Projects/front-end/old-portfolio/5.png"],
         projectIcon: "",
-        projectName: "TheSoloDev-Portfolio",
+        projectName: "TheSoloDev Portfolio",
         projectDescription: [
           "First version of my personal portfolio — showcasing my identity as TheSoloDev.",
           "Features: 'Who I'm' intro, Design & Productivity projects (Study on IA crimes, DataTools Wars, Library Management System, Weather Wizard),",
@@ -794,7 +794,7 @@ AboutPageContent: Array<aboutPar> = [
         ],
         projectUrl: "",
         projectItch: "",
-        projectGithub: "https://github.com/Quantum-Youssef-Amr/Portfolio",
+        projectGithub: "https://github.com/Youssef-amr-TheSoloDev/Portfolio",
         projectCreateYear: "2025",
         projectLastUpdateYear: "2025",
         projectStatus: "complete",
@@ -803,7 +803,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Solo Developer",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           }
         ]
@@ -817,7 +817,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/1.png", // Add a screenshot of the pairplot or ROC curves if you have one
           projectImages: ["assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/1.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/2.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/3.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/4.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/5.png", "assets/Projects/Data/Iris-Classification-SVM-vs-Neural-Network/6.png"],
           projectIcon: "",
-          projectName: "Iris-Classification-SVM-vs-Neural-Network",
+          projectName: "Iris Classification SVM vs Neural Network",
           projectDescription: [
             "End-to-end machine learning project comparing Support Vector Machine (SVM) and Feedforward Neural Network on the classic Iris dataset.",
             "Dataset: 150 samples, 4 features (sepal length/width, petal length/width), 3 classes (setosa, versicolor, virginica).",
@@ -838,7 +838,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/Iris-Classification-with-SVM-and-Neural-Network",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/Iris-Classification-with-SVM-and-Neural-Network",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -847,7 +847,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -856,7 +856,7 @@ AboutPageContent: Array<aboutPar> = [
         projectMainImage: "assets/Projects/Data/KNN-implementation/1.png",
         projectImages: ["assets/Projects/Data/KNN-implementation/1.png", "assets/Projects/Data/KNN-implementation/2.png", "assets/Projects/Data/KNN-implementation/3.png", "assets/Projects/Data/KNN-implementation/4.png", "assets/Projects/Data/KNN-implementation/5.png", "assets/Projects/Data/KNN-implementation/6.png", "assets/Projects/Data/KNN-implementation/7.png", "assets/Projects/Data/KNN-implementation/8.png", "assets/Projects/Data/KNN-implementation/9.png"],
         projectIcon: "",
-        projectName: "Heart-Disease-Prediction-using-KNN",
+        projectName: "Heart Disease Prediction using KNN",
         projectDescription: [
           "End-to-end machine learning project implementing K-Nearest Neighbors (KNN) classifier for binary heart disease prediction.",
           "Dataset: Patient health records including age, gender, cholesterol, blood pressure, heart rate, and other clinical features. Target: HeartDisease (0 = No Disease, 1 = Disease).",
@@ -877,7 +877,7 @@ AboutPageContent: Array<aboutPar> = [
         ],
         projectUrl: "",
         projectItch: "",
-        projectGithub: "https://github.com/Quantum-Youssef-Amr/KNN-implementation",
+        projectGithub: "https://github.com/Youssef-amr-TheSoloDev/KNN-implementation",
         projectCreateYear: "2025",
         projectLastUpdateYear: "2025",
         projectStatus: "complete",
@@ -886,7 +886,7 @@ AboutPageContent: Array<aboutPar> = [
             name: "Youssef Amr",
             role: "Solo Developer",
             LinkInLink: "",
-            GithubLink: "https://github.com/Quantum-Youssef-Amr",
+            GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
             itchLink: ""
           }
         ]
@@ -895,7 +895,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/Multiple-input-linear-regression-model/1.png", // Add 3D plot screenshot or regression visualization
           projectImages: ["assets/Projects/Data/Multiple-input-linear-regression-model/1.png", "assets/Projects/Data/Multiple-input-linear-regression-model/2.png", "assets/Projects/Data/Multiple-input-linear-regression-model/3.png", "assets/Projects/Data/Multiple-input-linear-regression-model/4.png", "assets/Projects/Data/Multiple-input-linear-regression-model/5.png"],
           projectIcon: "",
-          projectName: "Multiple-input-linear-regression-model",
+          projectName: "Multiple input linear regression model",
           projectDescription: [
             "Production-ready statistical modeling tool for predictive analytics, research, and machine learning baseline comparisons.",
             "Supports multiple input features with automated data handling — computes coefficients, intercepts, MSE, R², and statistical diagnostics.",
@@ -916,7 +916,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/Muiltple-input-linear-regression-model",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/Muiltple-input-linear-regression-model",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -925,7 +925,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -934,7 +934,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/simple-linear-regression-model/3.png",
           projectImages: ["assets/Projects/Data/simple-linear-regression-model/1.png", "assets/Projects/Data/simple-linear-regression-model/2.png", "assets/Projects/Data/simple-linear-regression-model/3.png", "assets/Projects/Data/simple-linear-regression-model/4.png", "assets/Projects/Data/simple-linear-regression-model/5.png", "assets/Projects/Data/simple-linear-regression-model/6.png", "assets/Projects/Data/simple-linear-regression-model/7.png", "assets/Projects/Data/simple-linear-regression-model/8.png", "assets/Projects/Data/simple-linear-regression-model/9.png", "assets/Projects/Data/simple-linear-regression-model/10.png"],
           projectIcon: "",
-          projectName: "Simple-Linear-Regression-Model",
+          projectName: "Simple Linear Regression Model",
           projectDescription: [
             "Foundational statistical modeling project implementing simple linear regression to explore relationships between variables.",
             "Analyzes how a single independent variable predicts a dependent variable, establishing core regression concepts.",
@@ -955,7 +955,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/simple-linear-regression-model-",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/simple-linear-regression-model-",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -964,7 +964,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -973,7 +973,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/Study-on-LA-crimes/1.png",
           projectImages: [ "assets/Projects/Data/Study-on-LA-crimes/1.png", "assets/Projects/Data/Study-on-LA-crimes/2.png", "assets/Projects/Data/Study-on-LA-crimes/3.png", "assets/Projects/Data/Study-on-LA-crimes/4.png", "assets/Projects/Data/Study-on-LA-crimes/5.png", "assets/Projects/Data/Study-on-LA-crimes/6.png", "assets/Projects/Data/Study-on-LA-crimes/7.png", "assets/Projects/Data/Study-on-LA-crimes/8.png", "assets/Projects/Data/Study-on-LA-crimes/9.png", "assets/Projects/Data/Study-on-LA-crimes/10.png", "assets/Projects/Data/Study-on-LA-crimes/11.png", "assets/Projects/Data/Study-on-LA-crimes/12.png"],
           projectIcon: "",
-          projectName: "San-Francisco-Crime-Classification",
+          projectName: "San Francisco Crime Classification",
           projectDescription: [
             "End-to-end machine learning workflow to classify crime types using real-world data from San Francisco.",
             "Dataset: Historical crime incident records from SF with features including crime category, datetime, location (latitude/longitude), and district.",
@@ -996,7 +996,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/Study-on-lA-crimes",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/Study-on-lA-crimes",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -1005,7 +1005,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -1014,7 +1014,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/War-analysis/11.png",
           projectImages: ["assets/Projects/Data/War-analysis/1.png", "assets/Projects/Data/War-analysis/2.png","assets/Projects/Data/War-analysis/3.png","assets/Projects/Data/War-analysis/4.png","assets/Projects/Data/War-analysis/5.png","assets/Projects/Data/War-analysis/6.png","assets/Projects/Data/War-analysis/7.png","assets/Projects/Data/War-analysis/8.png","assets/Projects/Data/War-analysis/9.png","assets/Projects/Data/War-analysis/10.png","assets/Projects/Data/War-analysis/11.png","assets/Projects/Data/War-analysis/12.png","assets/Projects/Data/War-analysis/13.png"],
           projectIcon: "",
-          projectName: "DataTools-Wars-Economic-Impact-Analysis-of-Modern-Conflicts",
+          projectName: "DataTools Wars Economic Impact Analysis of Modern Conflicts",
           projectDescription: [
             "Interactive Streamlit dashboard analyzing the economic impact of major modern conflicts: Iraq War, Syrian Civil War, Ukraine Conflict, and Yemeni Civil War.",
             "Data source: World Bank economic indicators via automated API fetching — including GDP, GDP per capita, CPI (inflation), trade balance, exports, and unemployment rates.",
@@ -1035,7 +1035,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "https://war-impace-analysis.streamlit.app/",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/War-impace-analysis",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/War-impace-analysis",
           projectCreateYear: "2025",
           projectLastUpdateYear: "2025",
           projectStatus: "complete",
@@ -1044,7 +1044,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -1053,7 +1053,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/Data/SVM/1.png",
           projectImages: ["assets/Projects/Data/SVM/1.png", "assets/Projects/Data/SVM/2.png", "assets/Projects/Data/SVM/3.png","assets/Projects/Data/SVM/4.png","assets/Projects/Data/SVM/5.png","assets/Projects/Data/SVM/6.png","assets/Projects/Data/SVM/7.png","assets/Projects/Data/SVM/8.png","assets/Projects/Data/SVM/9.png","assets/Projects/Data/SVM/10.png"],
           projectIcon: "",
-          projectName: "US-Company-Bankruptcy-Prediction-using-SVM",
+          projectName: "US Company Bankruptcy Prediction using SVM",
           projectDescription: [
             "Binary classification project predicting corporate bankruptcy using Support Vector Machines (SVM) on 20 years of financial data from NYSE and NASDAQ companies (1999-2018).",
             "Dataset: 78,682 firm-year observations from 8,262 distinct US public companies. Features include 22 financial indicators (18 original accounting metrics + 4 derived ratios: Debt-to-Assets, ROA, Current Ratio, EBIT-to-Revenue). Target: status_label (0 = Non-bankruptcy, 1 = Bankruptcy).",
@@ -1075,7 +1075,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/SVM",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/SVM",
           projectCreateYear: "2026",
           projectLastUpdateYear: "2026",
           projectStatus: "complete",
@@ -1084,7 +1084,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]
@@ -1098,7 +1098,7 @@ AboutPageContent: Array<aboutPar> = [
           projectMainImage: "assets/Projects/System/MyShell/1.png",
           projectImages: ["assets/Projects/System/MyShell/1.png", "assets/Projects/System/MyShell/2.png","assets/Projects/System/MyShell/3.png","assets/Projects/System/MyShell/4.png","assets/Projects/System/MyShell/5.png","assets/Projects/System/MyShell/6.png"],
           projectIcon: "",
-          projectName: "myShell-Unix-Shell-Implementation-in-C",
+          projectName: "myShell Unix Shell Implementation in C",
           projectDescription: [
             "Feature-complete Unix shell written in C from scratch — supports pipes, redirection, background execution, signal handling, and command history.",
             "Core functionality: Command parsing, fork/exec process creation, foreground/background process management with PID tracking.",
@@ -1122,7 +1122,7 @@ AboutPageContent: Array<aboutPar> = [
           ],
           projectUrl: "",
           projectItch: "",
-          projectGithub: "https://github.com/Quantum-Youssef-Amr/os-Konsole",
+          projectGithub: "https://github.com/Youssef-amr-TheSoloDev/os-Konsole",
           projectCreateYear: "2026",
           projectLastUpdateYear: "2026",
           projectStatus: "complete",
@@ -1131,7 +1131,7 @@ AboutPageContent: Array<aboutPar> = [
               name: "Youssef Amr",
               role: "Solo Developer",
               LinkInLink: "",
-              GithubLink: "https://github.com/Quantum-Youssef-Amr",
+              GithubLink: "https://github.com/Youssef-amr-TheSoloDev",
               itchLink: ""
             }
           ]

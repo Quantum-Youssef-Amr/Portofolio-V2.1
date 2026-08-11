@@ -27,7 +27,7 @@ export class BigProjectCard implements AfterContentInit, AfterViewInit {
       el.style.backgroundRepeat = 'no-repeat';
     }
 
-    this._size = this.Sizing == 'auto' ? this._size : "100dvh / 3"
+    this._size = this.Sizing == 'auto' ? this._size : "100dvh / 3";
   }
 
   ngAfterContentInit(): void {

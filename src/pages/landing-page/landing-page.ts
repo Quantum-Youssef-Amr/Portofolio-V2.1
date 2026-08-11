@@ -23,8 +23,8 @@ export class LandingPage implements OnInit{
   games: Array<project> = [];
   projects: Array<project> = [];
   SkillAmount: number = 12;
-  GameAmount: number = 3;
-  ProjectsAmount: number = 9;
+  GameAmount: number = 4;
+  ProjectsAmount: number = 8;
 
   constructor(private router: Router){}
 

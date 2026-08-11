@@ -15,10 +15,8 @@ main{
 .Grid-Collection{
   width: 90vw;
 
-
-
   >*{
-
+    width: auto;
     border-radius: 1em;
     -webkit-border-radius: 1em;
     -moz-border-radius: 1em;
@@ -89,7 +87,12 @@ main{
 
 @media (max-width: 750px){
   .Grid-Collection{
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: calc(100% - 3em);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .grid3{
+    grid-template-columns: calc(100% - 3em) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
   }
 }
